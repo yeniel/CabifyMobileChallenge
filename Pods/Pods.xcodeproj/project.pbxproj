@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+			productName = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		041C37C2B10C3911D87102DE9A984718 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB828F4AA96D15A3162B7F27D757825B /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F0DEB6B6B345C6C3EA648ED613883DA /* Pods-CabifyMobileChallenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 333203764AFE6355E887192461166E93 /* Pods-CabifyMobileChallenge-dummy.m */; };
+		641D34F565F31DFEF60566598D2AC52B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7CD828F3524C7B0321184CD777290450 /* Pods-CabifyMobileChallengeTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4156CEB90272E1EEB00DD6ACE4BA64D5 /* Pods-CabifyMobileChallengeTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92A13515C34A5C280E6F19BDD00689AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		966D88D0C8419D83F88D240C278BEC28 /* Pods-CabifyMobileChallengeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57663BB87576F9DE813EEF5BA66377B7 /* Pods-CabifyMobileChallengeTests-dummy.m */; };
+		A7CB2F5A6F15A54EFDB3E276D5F54081 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD2522311126736FD24CA58CA7D904A /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-dummy.m */; };
+		B2050813CEC54B220FB3A9601370B365 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DDAA6962DCDA173681B9D43531B2C738 /* Pods-CabifyMobileChallenge-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E17CCE14BEF93C00E98A52F8F160B711 /* Pods-CabifyMobileChallenge-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F199B7E45E02512D34D523662352C36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		319866FA8A59ACBC93E69FFEC5E0764E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBD016F264384338A9FECA8F47F2467D;
+			remoteInfo = "Pods-CabifyMobileChallenge";
+		};
+		7CB3D8B696B3623575662666BCCE2C79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00288072721C8198170C19C3C47000AF /* Pods-CabifyMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CabifyMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		02DBAEF589514F155FDDC6F0B61F3D17 /* Pods-CabifyMobileChallenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CabifyMobileChallenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		08CCB102DE296D38A98EA69DB21328D3 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		09B72CAC2A0152065779EBE17A8DEAF0 /* Pods-CabifyMobileChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CabifyMobileChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		19252A13130C6BF44765FBA8C82EC682 /* Pods-CabifyMobileChallenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CabifyMobileChallenge-acknowledgements.plist"; sourceTree = "<group>"; };
+		1D940EAFA53F1F4B8BA9E461EBE1D7A8 /* Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		280F9EA6295E2C233C0A0E575C92B27B /* Pods-CabifyMobileChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CabifyMobileChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		291AB5B06BA67EE75A0724F153710E45 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		333203764AFE6355E887192461166E93 /* Pods-CabifyMobileChallenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CabifyMobileChallenge-dummy.m"; sourceTree = "<group>"; };
+		35EEDD44FFF87DEDF1F691CCDEBF730B /* Pods_CabifyMobileChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabifyMobileChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD2522311126736FD24CA58CA7D904A /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-dummy.m"; sourceTree = "<group>"; };
+		3E3188863751168560DDED56011F70A7 /* Pods_CabifyMobileChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabifyMobileChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		4156CEB90272E1EEB00DD6ACE4BA64D5 /* Pods-CabifyMobileChallengeTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CabifyMobileChallengeTests-umbrella.h"; sourceTree = "<group>"; };
+		427D8E385BA2119E913B6B7D9445C01E /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		48531BC1A4C25E80D24D3BC877F7EA4B /* Pods-CabifyMobileChallenge.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CabifyMobileChallenge.modulemap"; sourceTree = "<group>"; };
+		57663BB87576F9DE813EEF5BA66377B7 /* Pods-CabifyMobileChallengeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CabifyMobileChallengeTests-dummy.m"; sourceTree = "<group>"; };
+		5963A31B3FB531E00213D4ABC07F0385 /* Pods-CabifyMobileChallengeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CabifyMobileChallengeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6E5DE92F88AF0DE9351F60EDE2A7C22B /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7AB6E58C150528F70585D608247F368E /* Pods-CabifyMobileChallenge-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CabifyMobileChallenge-Info.plist"; sourceTree = "<group>"; };
+		7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		830D9ADA86B2E1E40FA041D5E126DDA1 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-Info.plist"; sourceTree = "<group>"; };
+		91F32D2A229D44CF66403888C5EC102E /* Pods-CabifyMobileChallengeTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CabifyMobileChallengeTests.modulemap"; sourceTree = "<group>"; };
+		947E9A680D94207B7FB881A062708FD1 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.modulemap"; sourceTree = "<group>"; };
+		96C99F412857AEEA0216A7CD2C83C733 /* Pods-CabifyMobileChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CabifyMobileChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0AF4A895EAA284FC76C364F1BF5AEDC /* Pods-CabifyMobileChallengeTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CabifyMobileChallengeTests-Info.plist"; sourceTree = "<group>"; };
+		CB828F4AA96D15A3162B7F27D757825B /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-umbrella.h"; sourceTree = "<group>"; };
+		E17CCE14BEF93C00E98A52F8F160B711 /* Pods-CabifyMobileChallenge-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CabifyMobileChallenge-umbrella.h"; sourceTree = "<group>"; };
+		FDF597D1AA1371211F0889EAC3693904 /* Pods-CabifyMobileChallengeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CabifyMobileChallengeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		289E778462546C8A0C9C3084C6CAD436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A13515C34A5C280E6F19BDD00689AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34F7C000C111A32397078877F946295D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				641D34F565F31DFEF60566598D2AC52B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		721DFD269A38576C2BFADFD7C54A5CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2050813CEC54B220FB3A9601370B365 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		037B8EF25D79560CBDDBAE981D625CA0 /* Pods-CabifyMobileChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				48531BC1A4C25E80D24D3BC877F7EA4B /* Pods-CabifyMobileChallenge.modulemap */,
+				02DBAEF589514F155FDDC6F0B61F3D17 /* Pods-CabifyMobileChallenge-acknowledgements.markdown */,
+				19252A13130C6BF44765FBA8C82EC682 /* Pods-CabifyMobileChallenge-acknowledgements.plist */,
+				333203764AFE6355E887192461166E93 /* Pods-CabifyMobileChallenge-dummy.m */,
+				7AB6E58C150528F70585D608247F368E /* Pods-CabifyMobileChallenge-Info.plist */,
+				E17CCE14BEF93C00E98A52F8F160B711 /* Pods-CabifyMobileChallenge-umbrella.h */,
+				00288072721C8198170C19C3C47000AF /* Pods-CabifyMobileChallenge.debug.xcconfig */,
+				09B72CAC2A0152065779EBE17A8DEAF0 /* Pods-CabifyMobileChallenge.release.xcconfig */,
+			);
+			name = "Pods-CabifyMobileChallenge";
+			path = "Target Support Files/Pods-CabifyMobileChallenge";
+			sourceTree = "<group>";
+		};
+		2B6A6FF7B7049879F08A44FD29829C69 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				947E9A680D94207B7FB881A062708FD1 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.modulemap */,
+				6E5DE92F88AF0DE9351F60EDE2A7C22B /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-acknowledgements.markdown */,
+				427D8E385BA2119E913B6B7D9445C01E /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-acknowledgements.plist */,
+				3CD2522311126736FD24CA58CA7D904A /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-dummy.m */,
+				830D9ADA86B2E1E40FA041D5E126DDA1 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-Info.plist */,
+				CB828F4AA96D15A3162B7F27D757825B /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-umbrella.h */,
+				08CCB102DE296D38A98EA69DB21328D3 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.debug.xcconfig */,
+				291AB5B06BA67EE75A0724F153710E45 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.release.xcconfig */,
+			);
+			name = "Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests";
+			path = "Target Support Files/Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */,
+				7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		8F9ACFB57057A0E29977F3049FDD7B9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E3188863751168560DDED56011F70A7 /* Pods_CabifyMobileChallenge.framework */,
+				1D940EAFA53F1F4B8BA9E461EBE1D7A8 /* Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests.framework */,
+				35EEDD44FFF87DEDF1F691CCDEBF730B /* Pods_CabifyMobileChallengeTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D96179D43A67C5D5323B0682D32C133C /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2D0FF005C9B6B20EDC2E75C4FD945F8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				037B8EF25D79560CBDDBAE981D625CA0 /* Pods-CabifyMobileChallenge */,
+				2B6A6FF7B7049879F08A44FD29829C69 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests */,
+				C8AD9C033C196B11D4D586AE875B87E8 /* Pods-CabifyMobileChallengeTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C8AD9C033C196B11D4D586AE875B87E8 /* Pods-CabifyMobileChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				91F32D2A229D44CF66403888C5EC102E /* Pods-CabifyMobileChallengeTests.modulemap */,
+				FDF597D1AA1371211F0889EAC3693904 /* Pods-CabifyMobileChallengeTests-acknowledgements.markdown */,
+				5963A31B3FB531E00213D4ABC07F0385 /* Pods-CabifyMobileChallengeTests-acknowledgements.plist */,
+				57663BB87576F9DE813EEF5BA66377B7 /* Pods-CabifyMobileChallengeTests-dummy.m */,
+				A0AF4A895EAA284FC76C364F1BF5AEDC /* Pods-CabifyMobileChallengeTests-Info.plist */,
+				4156CEB90272E1EEB00DD6ACE4BA64D5 /* Pods-CabifyMobileChallengeTests-umbrella.h */,
+				96C99F412857AEEA0216A7CD2C83C733 /* Pods-CabifyMobileChallengeTests.debug.xcconfig */,
+				280F9EA6295E2C233C0A0E575C92B27B /* Pods-CabifyMobileChallengeTests.release.xcconfig */,
+			);
+			name = "Pods-CabifyMobileChallengeTests";
+			path = "Target Support Files/Pods-CabifyMobileChallengeTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				965877409E01FB3D85D85E90E6B30185 /* Pods */,
+				8F9ACFB57057A0E29977F3049FDD7B9F /* Products */,
+				B2D0FF005C9B6B20EDC2E75C4FD945F8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D96179D43A67C5D5323B0682D32C133C /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */,
+			);
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5595B5D704266CC332695153FB9FBD38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CD828F3524C7B0321184CD777290450 /* Pods-CabifyMobileChallengeTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DDC3AE88B12DC464F734F5190D16392 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041C37C2B10C3911D87102DE9A984718 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86E2A0D86256686DB791130EB79CE3E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDAA6962DCDA173681B9D43531B2C738 /* Pods-CabifyMobileChallenge-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		73FF82247774AFBA831A362FD3650518 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34BFCDA02A5DC71286B388EACD9BDE0B /* Build configuration list for PBXNativeTarget "Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests" */;
+			buildPhases = (
+				6DDC3AE88B12DC464F734F5190D16392 /* Headers */,
+				48A8FFCFE2457C61695162563385F08E /* Sources */,
+				34F7C000C111A32397078877F946295D /* Frameworks */,
+				A42522CCC9F0E38FB7EE082B5DE0CC78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9C44B756F64E8D9E84D0732670FC815 /* PBXTargetDependency */,
+			);
+			name = "Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests";
+			productName = Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests;
+			productReference = 1D940EAFA53F1F4B8BA9E461EBE1D7A8 /* Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CBD016F264384338A9FECA8F47F2467D /* Pods-CabifyMobileChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 520A54B93D48C0E4BF91301F07DBE3E2 /* Build configuration list for PBXNativeTarget "Pods-CabifyMobileChallenge" */;
+			buildPhases = (
+				86E2A0D86256686DB791130EB79CE3E5 /* Headers */,
+				0CF68F253D295CB4C7E1E870ACDF9D7A /* Sources */,
+				289E778462546C8A0C9C3084C6CAD436 /* Frameworks */,
+				8F5A3957AAADDFA4A53B3C4095862FBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D725B1C7A5E44CCF505FC9B69654C61 /* PBXTargetDependency */,
+			);
+			name = "Pods-CabifyMobileChallenge";
+			productName = Pods_CabifyMobileChallenge;
+			productReference = 3E3188863751168560DDED56011F70A7 /* Pods_CabifyMobileChallenge.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F145D578CA9A4AD43902355CA5449CE3 /* Pods-CabifyMobileChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFBBDD9096803D404D195E7707D4F8F7 /* Build configuration list for PBXNativeTarget "Pods-CabifyMobileChallengeTests" */;
+			buildPhases = (
+				5595B5D704266CC332695153FB9FBD38 /* Headers */,
+				EC1CFB277B59782FF2DF3616BC50AA3A /* Sources */,
+				721DFD269A38576C2BFADFD7C54A5CEA /* Frameworks */,
+				203CF675619AA000502A1578E60594AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5BE4A5103F507E2D1BCF44C657B86DD /* PBXTargetDependency */,
+			);
+			name = "Pods-CabifyMobileChallengeTests";
+			productName = Pods_CabifyMobileChallengeTests;
+			productReference = 35EEDD44FFF87DEDF1F691CCDEBF730B /* Pods_CabifyMobileChallengeTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1420;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8F9ACFB57057A0E29977F3049FDD7B9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBD016F264384338A9FECA8F47F2467D /* Pods-CabifyMobileChallenge */,
+				73FF82247774AFBA831A362FD3650518 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests */,
+				F145D578CA9A4AD43902355CA5449CE3 /* Pods-CabifyMobileChallengeTests */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		203CF675619AA000502A1578E60594AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F5A3957AAADDFA4A53B3C4095862FBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42522CCC9F0E38FB7EE082B5DE0CC78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CF68F253D295CB4C7E1E870ACDF9D7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F0DEB6B6B345C6C3EA648ED613883DA /* Pods-CabifyMobileChallenge-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A8FFCFE2457C61695162563385F08E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7CB2F5A6F15A54EFDB3E276D5F54081 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC1CFB277B59782FF2DF3616BC50AA3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966D88D0C8419D83F88D240C278BEC28 /* Pods-CabifyMobileChallengeTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D725B1C7A5E44CCF505FC9B69654C61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 7CB3D8B696B3623575662666BCCE2C79 /* PBXContainerItemProxy */;
+		};
+		B5BE4A5103F507E2D1BCF44C657B86DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CabifyMobileChallenge";
+			target = CBD016F264384338A9FECA8F47F2467D /* Pods-CabifyMobileChallenge */;
+			targetProxy = 319866FA8A59ACBC93E69FFEC5E0764E /* PBXContainerItemProxy */;
+		};
+		E9C44B756F64E8D9E84D0732670FC815 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 1F199B7E45E02512D34D523662352C36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		47B331CBF70A5542D300B3861C15C7B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08CCB102DE296D38A98EA69DB21328D3 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests/Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests/Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5395D49C682C0354F07AD68E56F8E3F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00288072721C8198170C19C3C47000AF /* Pods-CabifyMobileChallenge.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CabifyMobileChallenge/Pods-CabifyMobileChallenge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CabifyMobileChallenge/Pods-CabifyMobileChallenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F633763B143C2D8919552C55509EAA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96C99F412857AEEA0216A7CD2C83C733 /* Pods-CabifyMobileChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CabifyMobileChallengeTests/Pods-CabifyMobileChallengeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CabifyMobileChallengeTests/Pods-CabifyMobileChallengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		75B020B6EE2EFD9526527C0BF947BDEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09B72CAC2A0152065779EBE17A8DEAF0 /* Pods-CabifyMobileChallenge.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CabifyMobileChallenge/Pods-CabifyMobileChallenge-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CabifyMobileChallenge/Pods-CabifyMobileChallenge.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC38EBEB15D2BA40D87DEA19A136DDB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 280F9EA6295E2C233C0A0E575C92B27B /* Pods-CabifyMobileChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CabifyMobileChallengeTests/Pods-CabifyMobileChallengeTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CabifyMobileChallengeTests/Pods-CabifyMobileChallengeTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F955419AB61AAFD5E903912713891FD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 291AB5B06BA67EE75A0724F153710E45 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests/Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests/Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34BFCDA02A5DC71286B388EACD9BDE0B /* Build configuration list for PBXNativeTarget "Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47B331CBF70A5542D300B3861C15C7B8 /* Debug */,
+				F955419AB61AAFD5E903912713891FD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		520A54B93D48C0E4BF91301F07DBE3E2 /* Build configuration list for PBXNativeTarget "Pods-CabifyMobileChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5395D49C682C0354F07AD68E56F8E3F1 /* Debug */,
+				75B020B6EE2EFD9526527C0BF947BDEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */,
+				AD81E62ACCB0B7A923FC8AA288F9921E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFBBDD9096803D404D195E7707D4F8F7 /* Build configuration list for PBXNativeTarget "Pods-CabifyMobileChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F633763B143C2D8919552C55509EAA9 /* Debug */,
+				EC38EBEB15D2BA40D87DEA19A136DDB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

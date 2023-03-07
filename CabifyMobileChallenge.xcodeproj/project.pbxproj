@@ -1,0 +1,944 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20CE73BDD3F7CE8906039759 /* Pods_CabifyMobileChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B493F300B8240393F7CC4C1B /* Pods_CabifyMobileChallengeTests.framework */; };
+		EFF1AF4924965FE1ACFE44D4 /* Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EA5FDD31D032D13A46120A /* Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests.framework */; };
+		FE6C2EEFA8B2D6973165CED1 /* Pods_CabifyMobileChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F1FC5845792A6E1DA531B8 /* Pods_CabifyMobileChallenge.framework */; };
+		FEF3732029B7EF5200291A19 /* CabifyMobileChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3731F29B7EF5200291A19 /* CabifyMobileChallengeApp.swift */; };
+		FEF3732229B7EF5300291A19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3732129B7EF5300291A19 /* ContentView.swift */; };
+		FEF3732429B7EF5500291A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF3732329B7EF5500291A19 /* Assets.xcassets */; };
+		FEF3732729B7EF5500291A19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF3732629B7EF5500291A19 /* Preview Assets.xcassets */; };
+		FEF3733129B7EF5600291A19 /* CabifyMobileChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3733029B7EF5600291A19 /* CabifyMobileChallengeTests.swift */; };
+		FEF3733B29B7EF5600291A19 /* CabifyMobileChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3733A29B7EF5600291A19 /* CabifyMobileChallengeUITests.swift */; };
+		FEF3733D29B7EF5600291A19 /* CabifyMobileChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3733C29B7EF5600291A19 /* CabifyMobileChallengeUITestsLaunchTests.swift */; };
+		FEF3735929B7F64200291A19 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = FEF3735829B7F64200291A19 /* Factory */; };
+		FEF3735C29B7F65800291A19 /* Stinsen in Frameworks */ = {isa = PBXBuildFile; productRef = FEF3735B29B7F65800291A19 /* Stinsen */; };
+		FEF3735F29B7F68C00291A19 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FEF3735E29B7F68C00291A19 /* OHHTTPStubsSwift */; };
+		FEF3736229B7F72C00291A19 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = FEF3736129B7F72C00291A19 /* SnapshotTesting */; };
+		FEF3736529B7F76000291A19 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = FEF3736429B7F76000291A19 /* Quick */; };
+		FEF3736829B7F7A500291A19 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = FEF3736729B7F7A500291A19 /* Nimble */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEF3732D29B7EF5600291A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF3731429B7EF5200291A19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEF3731B29B7EF5200291A19;
+			remoteInfo = CabifyMobileChallenge;
+		};
+		FEF3733729B7EF5600291A19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF3731429B7EF5200291A19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEF3731B29B7EF5200291A19;
+			remoteInfo = CabifyMobileChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68ADF0F22ABAD1DEEEAA2C9D /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests/Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		73F46BF1D1EE6D282D09C76D /* Pods-CabifyMobileChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabifyMobileChallenge.release.xcconfig"; path = "Target Support Files/Pods-CabifyMobileChallenge/Pods-CabifyMobileChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		8F8A81AB508DC687685ED1B8 /* Pods-CabifyMobileChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabifyMobileChallenge.debug.xcconfig"; path = "Target Support Files/Pods-CabifyMobileChallenge/Pods-CabifyMobileChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		959CFF742BA1C35BBA97378A /* Pods-CabifyMobileChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabifyMobileChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-CabifyMobileChallengeTests/Pods-CabifyMobileChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F09DCC79985BEDD9F21DC87 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests/Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A5EA5FDD31D032D13A46120A /* Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B493F300B8240393F7CC4C1B /* Pods_CabifyMobileChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabifyMobileChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3EA5C9A09F0924C68737241 /* Pods-CabifyMobileChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabifyMobileChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-CabifyMobileChallengeTests/Pods-CabifyMobileChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		F6F1FC5845792A6E1DA531B8 /* Pods_CabifyMobileChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabifyMobileChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF3731C29B7EF5200291A19 /* CabifyMobileChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CabifyMobileChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF3731F29B7EF5200291A19 /* CabifyMobileChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabifyMobileChallengeApp.swift; sourceTree = "<group>"; };
+		FEF3732129B7EF5300291A19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FEF3732329B7EF5500291A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEF3732629B7EF5500291A19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FEF3732C29B7EF5600291A19 /* CabifyMobileChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CabifyMobileChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF3733029B7EF5600291A19 /* CabifyMobileChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabifyMobileChallengeTests.swift; sourceTree = "<group>"; };
+		FEF3733629B7EF5600291A19 /* CabifyMobileChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CabifyMobileChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF3733A29B7EF5600291A19 /* CabifyMobileChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabifyMobileChallengeUITests.swift; sourceTree = "<group>"; };
+		FEF3733C29B7EF5600291A19 /* CabifyMobileChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabifyMobileChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEF3731929B7EF5200291A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF3735C29B7F65800291A19 /* Stinsen in Frameworks */,
+				FE6C2EEFA8B2D6973165CED1 /* Pods_CabifyMobileChallenge.framework in Frameworks */,
+				FEF3735929B7F64200291A19 /* Factory in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF3732929B7EF5600291A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF3736829B7F7A500291A19 /* Nimble in Frameworks */,
+				FEF3736229B7F72C00291A19 /* SnapshotTesting in Frameworks */,
+				20CE73BDD3F7CE8906039759 /* Pods_CabifyMobileChallengeTests.framework in Frameworks */,
+				FEF3736529B7F76000291A19 /* Quick in Frameworks */,
+				FEF3735F29B7F68C00291A19 /* OHHTTPStubsSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF3733329B7EF5600291A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF1AF4924965FE1ACFE44D4 /* Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A68A026824563737F63041A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F8A81AB508DC687685ED1B8 /* Pods-CabifyMobileChallenge.debug.xcconfig */,
+				73F46BF1D1EE6D282D09C76D /* Pods-CabifyMobileChallenge.release.xcconfig */,
+				68ADF0F22ABAD1DEEEAA2C9D /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.debug.xcconfig */,
+				9F09DCC79985BEDD9F21DC87 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.release.xcconfig */,
+				959CFF742BA1C35BBA97378A /* Pods-CabifyMobileChallengeTests.debug.xcconfig */,
+				E3EA5C9A09F0924C68737241 /* Pods-CabifyMobileChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D25EC355F36723EEB561747A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6F1FC5845792A6E1DA531B8 /* Pods_CabifyMobileChallenge.framework */,
+				A5EA5FDD31D032D13A46120A /* Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests.framework */,
+				B493F300B8240393F7CC4C1B /* Pods_CabifyMobileChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEF3731329B7EF5200291A19 = {
+			isa = PBXGroup;
+			children = (
+				FEF3731E29B7EF5200291A19 /* CabifyMobileChallenge */,
+				FEF3732F29B7EF5600291A19 /* CabifyMobileChallengeTests */,
+				FEF3733929B7EF5600291A19 /* CabifyMobileChallengeUITests */,
+				FEF3731D29B7EF5200291A19 /* Products */,
+				7A68A026824563737F63041A /* Pods */,
+				D25EC355F36723EEB561747A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FEF3731D29B7EF5200291A19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3731C29B7EF5200291A19 /* CabifyMobileChallenge.app */,
+				FEF3732C29B7EF5600291A19 /* CabifyMobileChallengeTests.xctest */,
+				FEF3733629B7EF5600291A19 /* CabifyMobileChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEF3731E29B7EF5200291A19 /* CabifyMobileChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3734929B7F1B900291A19 /* Data */,
+				FEF3734A29B7F1BF00291A19 /* Domain */,
+				FEF3734B29B7F1CA00291A19 /* Presentation */,
+				FEF3731F29B7EF5200291A19 /* CabifyMobileChallengeApp.swift */,
+				FEF3732129B7EF5300291A19 /* ContentView.swift */,
+				FEF3732329B7EF5500291A19 /* Assets.xcassets */,
+				FEF3732529B7EF5500291A19 /* Preview Content */,
+			);
+			path = CabifyMobileChallenge;
+			sourceTree = "<group>";
+		};
+		FEF3732529B7EF5500291A19 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3732629B7EF5500291A19 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FEF3732F29B7EF5600291A19 /* CabifyMobileChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3733029B7EF5600291A19 /* CabifyMobileChallengeTests.swift */,
+			);
+			path = CabifyMobileChallengeTests;
+			sourceTree = "<group>";
+		};
+		FEF3733929B7EF5600291A19 /* CabifyMobileChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3733A29B7EF5600291A19 /* CabifyMobileChallengeUITests.swift */,
+				FEF3733C29B7EF5600291A19 /* CabifyMobileChallengeUITestsLaunchTests.swift */,
+			);
+			path = CabifyMobileChallengeUITests;
+			sourceTree = "<group>";
+		};
+		FEF3734929B7F1B900291A19 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3735429B7F45E00291A19 /* Mappers */,
+				FEF3734D29B7F37800291A19 /* ApiClient */,
+				FEF3734E29B7F38800291A19 /* Dto */,
+				FEF3734C29B7F36A00291A19 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FEF3734A29B7F1BF00291A19 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3735029B7F3AB00291A19 /* Models */,
+				FEF3734F29B7F3A600291A19 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FEF3734B29B7F1CA00291A19 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3735529B7F47500291A19 /* Views */,
+				FEF3735329B7F45200291A19 /* Mappers */,
+				FEF3735229B7F42000291A19 /* Models */,
+				FEF3735129B7F41600291A19 /* Router */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FEF3734C29B7F36A00291A19 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		FEF3734D29B7F37800291A19 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+		FEF3734E29B7F38800291A19 /* Dto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dto;
+			sourceTree = "<group>";
+		};
+		FEF3734F29B7F3A600291A19 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		FEF3735029B7F3AB00291A19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FEF3735129B7F41600291A19 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FEF3735229B7F42000291A19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FEF3735329B7F45200291A19 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		FEF3735429B7F45E00291A19 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		FEF3735529B7F47500291A19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEF3731B29B7EF5200291A19 /* CabifyMobileChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF3734029B7EF5600291A19 /* Build configuration list for PBXNativeTarget "CabifyMobileChallenge" */;
+			buildPhases = (
+				145F8787C37A8C4FB87447BA /* [CP] Check Pods Manifest.lock */,
+				FEF3731829B7EF5200291A19 /* Sources */,
+				FEF3731929B7EF5200291A19 /* Frameworks */,
+				FEF3731A29B7EF5200291A19 /* Resources */,
+				FEF3735629B7F56B00291A19 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CabifyMobileChallenge;
+			packageProductDependencies = (
+				FEF3735829B7F64200291A19 /* Factory */,
+				FEF3735B29B7F65800291A19 /* Stinsen */,
+			);
+			productName = CabifyMobileChallenge;
+			productReference = FEF3731C29B7EF5200291A19 /* CabifyMobileChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEF3732B29B7EF5600291A19 /* CabifyMobileChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF3734329B7EF5600291A19 /* Build configuration list for PBXNativeTarget "CabifyMobileChallengeTests" */;
+			buildPhases = (
+				C093194585E73560EF9E9CB5 /* [CP] Check Pods Manifest.lock */,
+				FEF3732829B7EF5600291A19 /* Sources */,
+				FEF3732929B7EF5600291A19 /* Frameworks */,
+				FEF3732A29B7EF5600291A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEF3732E29B7EF5600291A19 /* PBXTargetDependency */,
+			);
+			name = CabifyMobileChallengeTests;
+			packageProductDependencies = (
+				FEF3735E29B7F68C00291A19 /* OHHTTPStubsSwift */,
+				FEF3736129B7F72C00291A19 /* SnapshotTesting */,
+				FEF3736429B7F76000291A19 /* Quick */,
+				FEF3736729B7F7A500291A19 /* Nimble */,
+			);
+			productName = CabifyMobileChallengeTests;
+			productReference = FEF3732C29B7EF5600291A19 /* CabifyMobileChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FEF3733529B7EF5600291A19 /* CabifyMobileChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF3734629B7EF5600291A19 /* Build configuration list for PBXNativeTarget "CabifyMobileChallengeUITests" */;
+			buildPhases = (
+				80459FF1E7A07DC6865922A9 /* [CP] Check Pods Manifest.lock */,
+				FEF3733229B7EF5600291A19 /* Sources */,
+				FEF3733329B7EF5600291A19 /* Frameworks */,
+				FEF3733429B7EF5600291A19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEF3733829B7EF5600291A19 /* PBXTargetDependency */,
+			);
+			name = CabifyMobileChallengeUITests;
+			productName = CabifyMobileChallengeUITests;
+			productReference = FEF3733629B7EF5600291A19 /* CabifyMobileChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEF3731429B7EF5200291A19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FEF3731B29B7EF5200291A19 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FEF3732B29B7EF5600291A19 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FEF3731B29B7EF5200291A19;
+					};
+					FEF3733529B7EF5600291A19 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FEF3731B29B7EF5200291A19;
+					};
+				};
+			};
+			buildConfigurationList = FEF3731729B7EF5200291A19 /* Build configuration list for PBXProject "CabifyMobileChallenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEF3731329B7EF5200291A19;
+			packageReferences = (
+				FEF3735729B7F64200291A19 /* XCRemoteSwiftPackageReference "Factory" */,
+				FEF3735A29B7F65800291A19 /* XCRemoteSwiftPackageReference "stinsen" */,
+				FEF3735D29B7F68C00291A19 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
+				FEF3736029B7F72C00291A19 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				FEF3736329B7F76000291A19 /* XCRemoteSwiftPackageReference "Quick" */,
+				FEF3736629B7F7A500291A19 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
+			productRefGroup = FEF3731D29B7EF5200291A19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEF3731B29B7EF5200291A19 /* CabifyMobileChallenge */,
+				FEF3732B29B7EF5600291A19 /* CabifyMobileChallengeTests */,
+				FEF3733529B7EF5600291A19 /* CabifyMobileChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEF3731A29B7EF5200291A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF3732729B7EF5500291A19 /* Preview Assets.xcassets in Resources */,
+				FEF3732429B7EF5500291A19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF3732A29B7EF5600291A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF3733429B7EF5600291A19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		145F8787C37A8C4FB87447BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CabifyMobileChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80459FF1E7A07DC6865922A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C093194585E73560EF9E9CB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CabifyMobileChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF3735629B7F56B00291A19 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEF3731829B7EF5200291A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF3732229B7EF5300291A19 /* ContentView.swift in Sources */,
+				FEF3732029B7EF5200291A19 /* CabifyMobileChallengeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF3732829B7EF5600291A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF3733129B7EF5600291A19 /* CabifyMobileChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF3733229B7EF5600291A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF3733D29B7EF5600291A19 /* CabifyMobileChallengeUITestsLaunchTests.swift in Sources */,
+				FEF3733B29B7EF5600291A19 /* CabifyMobileChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEF3732E29B7EF5600291A19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEF3731B29B7EF5200291A19 /* CabifyMobileChallenge */;
+			targetProxy = FEF3732D29B7EF5600291A19 /* PBXContainerItemProxy */;
+		};
+		FEF3733829B7EF5600291A19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEF3731B29B7EF5200291A19 /* CabifyMobileChallenge */;
+			targetProxy = FEF3733729B7EF5600291A19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FEF3733E29B7EF5600291A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FEF3733F29B7EF5600291A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEF3734129B7EF5600291A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F8A81AB508DC687685ED1B8 /* Pods-CabifyMobileChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CabifyMobileChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = SVW6HF2MTV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeniellandestoy.CabifyMobileChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEF3734229B7EF5600291A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73F46BF1D1EE6D282D09C76D /* Pods-CabifyMobileChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CabifyMobileChallenge/Preview Content\"";
+				DEVELOPMENT_TEAM = SVW6HF2MTV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeniellandestoy.CabifyMobileChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FEF3734429B7EF5600291A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 959CFF742BA1C35BBA97378A /* Pods-CabifyMobileChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SVW6HF2MTV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeniellandestoy.CabifyMobileChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CabifyMobileChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CabifyMobileChallenge";
+			};
+			name = Debug;
+		};
+		FEF3734529B7EF5600291A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3EA5C9A09F0924C68737241 /* Pods-CabifyMobileChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SVW6HF2MTV;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeniellandestoy.CabifyMobileChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CabifyMobileChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CabifyMobileChallenge";
+			};
+			name = Release;
+		};
+		FEF3734729B7EF5600291A19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68ADF0F22ABAD1DEEEAA2C9D /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SVW6HF2MTV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeniellandestoy.CabifyMobileChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CabifyMobileChallenge;
+			};
+			name = Debug;
+		};
+		FEF3734829B7EF5600291A19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F09DCC79985BEDD9F21DC87 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SVW6HF2MTV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yeniellandestoy.CabifyMobileChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CabifyMobileChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEF3731729B7EF5200291A19 /* Build configuration list for PBXProject "CabifyMobileChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF3733E29B7EF5600291A19 /* Debug */,
+				FEF3733F29B7EF5600291A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEF3734029B7EF5600291A19 /* Build configuration list for PBXNativeTarget "CabifyMobileChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF3734129B7EF5600291A19 /* Debug */,
+				FEF3734229B7EF5600291A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEF3734329B7EF5600291A19 /* Build configuration list for PBXNativeTarget "CabifyMobileChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF3734429B7EF5600291A19 /* Debug */,
+				FEF3734529B7EF5600291A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEF3734629B7EF5600291A19 /* Build configuration list for PBXNativeTarget "CabifyMobileChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF3734729B7EF5600291A19 /* Debug */,
+				FEF3734829B7EF5600291A19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FEF3735729B7F64200291A19 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		FEF3735A29B7F65800291A19 /* XCRemoteSwiftPackageReference "stinsen" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rundfunk47/stinsen";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		FEF3735D29B7F68C00291A19 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		FEF3736029B7F72C00291A19 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		FEF3736329B7F76000291A19 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JosephDuffy/Quick";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		FEF3736629B7F7A500291A19 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FEF3735829B7F64200291A19 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEF3735729B7F64200291A19 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+		FEF3735B29B7F65800291A19 /* Stinsen */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEF3735A29B7F65800291A19 /* XCRemoteSwiftPackageReference "stinsen" */;
+			productName = Stinsen;
+		};
+		FEF3735E29B7F68C00291A19 /* OHHTTPStubsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEF3735D29B7F68C00291A19 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubsSwift;
+		};
+		FEF3736129B7F72C00291A19 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEF3736029B7F72C00291A19 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		FEF3736429B7F76000291A19 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEF3736329B7F76000291A19 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		FEF3736729B7F7A500291A19 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEF3736629B7F7A500291A19 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FEF3731429B7EF5200291A19 /* Project object */;
+}
