@@ -16,8 +16,8 @@ struct ProductsRepositoryImpl: ProductsRepository {
     @Injected(\.dtoMapper)
     private var dtoMapper: DtoMapper
 
-    func getProducts() -> AnyPublisher<[Product], CabifyError> {
-        apiDataSource.getProducts()
+    func loadProducts() -> AnyPublisher<[Product], CabifyError> {
+        apiDataSource.loadProducts()
             .map { dtoMapper.productListDtoToProductList(dto: $0) }
             .eraseToAnyPublisher()
     }

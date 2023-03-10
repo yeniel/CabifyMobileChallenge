@@ -20,8 +20,8 @@ class ProductListViewModel: ObservableObject {
     @Published
     var showError: Bool = false
 
-    @Injected(\.getProductsUseCase)
-    private var getProductsUseCase: GetProductsUseCase
+    @Injected(\.loadProductsUseCase)
+    private var loadProductsUseCase: LoadProductsUseCase
 
     private let coordinator: MainCoordinatorProtocol
     private var cancellables = Set<AnyCancellable>()
@@ -29,7 +29,7 @@ class ProductListViewModel: ObservableObject {
     init(coordinator: MainCoordinatorProtocol) {
         self.coordinator = coordinator
 
-        getProductsUseCase.execute()
+        loadProductsUseCase.execute()
             .sink(
                 receiveCompletion: { _ in },
                 receiveValue: { products in

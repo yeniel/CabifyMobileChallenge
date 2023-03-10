@@ -9,5 +9,5 @@ import Foundation
 import Combine
 
 protocol ProductsDataSource {
-    func getProducts() -> AnyPublisher<ProductListDto, CabifyError>
+    func loadProducts() -> AnyPublisher<ProductListDto, CabifyError>
 }

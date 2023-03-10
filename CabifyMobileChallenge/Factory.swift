@@ -33,7 +33,7 @@ extension Container {
 
     // MARK: Use Cases
 
-    var getProductsUseCase: Factory<GetProductsUseCase> {
-        Factory(self) { GetProductsUseCase() }
+    var loadProductsUseCase: Factory<LoadProductsUseCase> {
+        Factory(self) { LoadProductsUseCase() }
     }
 }

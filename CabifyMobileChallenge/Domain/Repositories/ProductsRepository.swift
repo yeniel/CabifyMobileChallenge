@@ -9,5 +9,5 @@ import Foundation
 import Combine
 
 protocol ProductsRepository {
-    func getProducts() -> AnyPublisher<[Product], CabifyError>
+    func loadProducts() -> AnyPublisher<[Product], CabifyError>
 }
