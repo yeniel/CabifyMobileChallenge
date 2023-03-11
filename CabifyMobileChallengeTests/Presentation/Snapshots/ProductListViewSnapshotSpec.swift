@@ -14,7 +14,7 @@ class ProductListViewSnapshotSpec: QuickSpec {
     override func spec() {
         var mockCoordinator: MockMainCoordinator!
 
-        isRecording = true
+        isRecording = false
 
         beforeEach {
             Container.shared.manager.push()
