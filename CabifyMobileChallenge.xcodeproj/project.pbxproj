@@ -177,6 +177,7 @@
 		FED86DB329BD0233004637E6 /* LoadOrderUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadOrderUseCaseSpec.swift; sourceTree = "<group>"; };
 		FED86DB529BD051D004637E6 /* ProductListViewSnapshotSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewSnapshotSpec.swift; sourceTree = "<group>"; };
 		FED86DB729BD0CB6004637E6 /* CheckoutViewSnapshotSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewSnapshotSpec.swift; sourceTree = "<group>"; };
+		FED86DB929BD2F78004637E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FEE0177429BBE416003D8E17 /* SaveOrderUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveOrderUseCaseImpl.swift; sourceTree = "<group>"; };
 		FEE0177729BBE77A003D8E17 /* OrderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepository.swift; sourceTree = "<group>"; };
 		FEE0177929BBE7E4003D8E17 /* OrderRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepositoryImpl.swift; sourceTree = "<group>"; };
@@ -251,8 +252,8 @@
 		FE24145929BA44D200CE63F4 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				FE24145A29BA44E000CE63F4 /* ProductsRepository.swift */,
 				FEE0177729BBE77A003D8E17 /* OrderRepository.swift */,
+				FE24145A29BA44E000CE63F4 /* ProductsRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -308,9 +309,9 @@
 		FEBFF2BB29BC9A6B0056E397 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FEBFF2BE29BC9A8E0056E397 /* Snapshots */,
 				FED86DAC29BCEAC4004637E6 /* Utils */,
 				FEBFF2BF29BC9A930056E397 /* ViewModels */,
-				FEBFF2BE29BC9A8E0056E397 /* Snapshots */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -318,11 +319,11 @@
 		FEBFF2BC29BC9A710056E397 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				FED86DA429BCCEE7004637E6 /* PackDiscountSpec.swift */,
 				FED86DA629BCD778004637E6 /* BulkDiscountSpec.swift */,
 				FED86DA829BCDF9B004637E6 /* GetDiscountsOfOrderItemUseCaseSpec.swift */,
-				FED86DAA29BCE346004637E6 /* LoadProductsUseCaseSpec.swift */,
 				FED86DB329BD0233004637E6 /* LoadOrderUseCaseSpec.swift */,
+				FED86DAA29BCE346004637E6 /* LoadProductsUseCaseSpec.swift */,
+				FED86DA429BCCEE7004637E6 /* PackDiscountSpec.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -330,10 +331,10 @@
 		FEBFF2BD29BC9A780056E397 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				FEBFF2DA29BCA14B0056E397 /* UrlSessionApiClientSpec.swift */,
+				FED86D8D29BCC0D0004637E6 /* product_list.json */,
 				FEBFF2F029BCA7300056E397 /* OrderRepositorySpec.swift */,
 				FEBFF2F229BCB1A40056E397 /* ProductsRepositorySpec.swift */,
-				FED86D8D29BCC0D0004637E6 /* product_list.json */,
+				FEBFF2DA29BCA14B0056E397 /* UrlSessionApiClientSpec.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -341,8 +342,8 @@
 		FEBFF2BE29BC9A8E0056E397 /* Snapshots */ = {
 			isa = PBXGroup;
 			children = (
-				FED86DB529BD051D004637E6 /* ProductListViewSnapshotSpec.swift */,
 				FED86DB729BD0CB6004637E6 /* CheckoutViewSnapshotSpec.swift */,
+				FED86DB529BD051D004637E6 /* ProductListViewSnapshotSpec.swift */,
 			);
 			path = Snapshots;
 			sourceTree = "<group>";
@@ -350,8 +351,8 @@
 		FEBFF2BF29BC9A930056E397 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				FED86DAF29BCEDEE004637E6 /* ProductListViewModelSpec.swift */,
 				FED86DB129BCFB93004637E6 /* CheckoutViewModeSpec.swift */,
+				FED86DAF29BCEDEE004637E6 /* ProductListViewModelSpec.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -367,9 +368,9 @@
 		FEE0177629BBE75F003D8E17 /* OrderRepository */ = {
 			isa = PBXGroup;
 			children = (
-				FEE0177929BBE7E4003D8E17 /* OrderRepositoryImpl.swift */,
 				FEE0177B29BBE832003D8E17 /* OrderDataSource.swift */,
 				FEE0177D29BBE88C003D8E17 /* OrderLocalDataSource.swift */,
+				FEE0177929BBE7E4003D8E17 /* OrderRepositoryImpl.swift */,
 			);
 			path = OrderRepository;
 			sourceTree = "<group>";
@@ -397,6 +398,7 @@
 		FEF3731E29B7EF5200291A19 /* CabifyMobileChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				FED86DB929BD2F78004637E6 /* Info.plist */,
 				FEF3734929B7F1B900291A19 /* Data */,
 				FEF3734A29B7F1BF00291A19 /* Domain */,
 				FEF3734B29B7F1CA00291A19 /* Presentation */,
@@ -430,9 +432,9 @@
 		FEF3734929B7F1B900291A19 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				FEF3735429B7F45E00291A19 /* Mappers */,
 				FEF3734D29B7F37800291A19 /* ApiClient */,
 				FEF3734E29B7F38800291A19 /* Dto */,
+				FEF3735429B7F45E00291A19 /* Mappers */,
 				FEF3734C29B7F36A00291A19 /* Repositories */,
 			);
 			path = Data;
@@ -441,8 +443,8 @@
 		FEF3734A29B7F1BF00291A19 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				FE24145929BA44D200CE63F4 /* Repositories */,
 				FEF3735029B7F3AB00291A19 /* Models */,
+				FE24145929BA44D200CE63F4 /* Repositories */,
 				FEF3734F29B7F3A600291A19 /* UseCases */,
 			);
 			path = Domain;
@@ -451,9 +453,9 @@
 		FEF3734B29B7F1CA00291A19 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				FEF3735129B7F41600291A19 /* Router */,
 				FE24148229BA93F200CE63F4 /* Utils */,
 				FEF3735529B7F47500291A19 /* Views */,
-				FEF3735129B7F41600291A19 /* Router */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -488,10 +490,10 @@
 		FEF3734F29B7F3A600291A19 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				FEE0178929BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift */,
+				FEE0178129BBF2BC003D8E17 /* LoadOrderUseCaseImpl.swift */,
 				FE24146E29BA4F6700CE63F4 /* LoadProductsUseCaseImpl.swift */,
 				FEE0177429BBE416003D8E17 /* SaveOrderUseCaseImpl.swift */,
-				FEE0178129BBF2BC003D8E17 /* LoadOrderUseCaseImpl.swift */,
-				FEE0178929BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -499,15 +501,15 @@
 		FEF3735029B7F3AB00291A19 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FE24145329BA41B400CE63F4 /* PackDiscount.swift */,
 				FE24145529BA442E00CE63F4 /* BulkDiscount.swift */,
 				FEF3736D29B7FAF600291A19 /* CabifyError.swift */,
-				FE24145C29BA453500CE63F4 /* Product.swift */,
-				FE24145E29BA45EF00CE63F4 /* ProductType.swift */,
+				FED58F1E29BB7E0A00016CF9 /* DiscountStrategy.swift */,
 				FE24148529BA963800CE63F4 /* Order.swift */,
 				FE24148729BA965C00CE63F4 /* OrderItem.swift */,
-				FED58F1E29BB7E0A00016CF9 /* DiscountStrategy.swift */,
 				FEE0178729BC03F9003D8E17 /* OrderItemDiscount.swift */,
+				FE24145329BA41B400CE63F4 /* PackDiscount.swift */,
+				FE24145C29BA453500CE63F4 /* Product.swift */,
+				FE24145E29BA45EF00CE63F4 /* ProductType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -971,7 +973,7 @@
 				DEVELOPMENT_TEAM = SVW6HF2MTV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = CabifyMobileChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1001,7 +1003,7 @@
 				DEVELOPMENT_TEAM = SVW6HF2MTV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = CabifyMobileChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
