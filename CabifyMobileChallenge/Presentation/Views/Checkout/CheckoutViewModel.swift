@@ -26,7 +26,6 @@ class CheckoutViewModel: ObservableObject {
 
     init() {
         loadOrderUseCase.execute()
-            .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: { _ in },
                 receiveValue: { order in
@@ -37,14 +36,14 @@ class CheckoutViewModel: ObservableObject {
                         let discountsUIModel: [DiscountUIModel] = discounts.map {
                             self.mapToDiscountUIModel(discount: $0)
                         }
-                        let orderItemPrice = Double($0.quantity) * $0.productPrice
+                        let orderItemPrice = Double($0.quantity) * $0.product.price
                         let discountsAmount = discounts.map { $0.amount }.reduce(0, +)
 
                         totalPrice += orderItemPrice - discountsAmount
 
                         return OrderItemUIModel(
-                            id: UUID(),
-                            productName: $0.productName,
+                            id: $0.product.type,
+                            productName: $0.product.name,
                             quantity: $0.quantity,
                             formattedPrice: orderItemPrice.currencyFormat,
                             discounts: discountsUIModel

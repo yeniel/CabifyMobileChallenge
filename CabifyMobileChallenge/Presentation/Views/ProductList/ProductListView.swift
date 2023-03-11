@@ -33,11 +33,12 @@ struct ProductListView: View {
                 }
                 Spacer()
                 Button {
-                    viewModel.routeToCheckout()
+                    viewModel.checkout()
                 } label: {
                   Text("Checkout")
                 }
                 .buttonStyle(.bordered)
+                .padding()
             }
 
         }

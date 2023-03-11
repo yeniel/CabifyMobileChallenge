@@ -9,7 +9,11 @@ import Foundation
 import Combine
 import Factory
 
-struct LoadProductsUseCase {
+protocol LoadProductsUseCase {
+    func execute() -> AnyPublisher<[Product], CabifyError>
+}
+
+struct LoadProductsUseCaseImpl: LoadProductsUseCase {
     @Injected(\.productsRepository)
     private var productsRepository
 

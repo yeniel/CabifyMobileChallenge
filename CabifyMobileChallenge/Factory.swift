@@ -46,15 +46,15 @@ extension Container {
     // MARK: Use Cases
 
     var loadProductsUseCase: Factory<LoadProductsUseCase> {
-        Factory(self) { LoadProductsUseCase() }
+        Factory(self) { LoadProductsUseCaseImpl() }
     }
 
     var saveOrderUseCase: Factory<SaveOrderUseCase> {
-        Factory(self) { SaveOrderUseCase() }
+        Factory(self) { SaveOrderUseCaseImpl() }
     }
 
     var loadOrderUseCase: Factory<LoadOrderUseCase> {
-        Factory(self) { LoadOrderUseCase() }
+        Factory(self) { LoadOrderUseCaseImpl() }
     }
 
     var getDiscountsOfOrderItemUseCase: Factory<GetDiscountsOfOrderItemUseCase> {

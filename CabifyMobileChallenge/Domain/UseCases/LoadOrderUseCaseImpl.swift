@@ -9,11 +9,19 @@ import Foundation
 import Combine
 import Factory
 
-struct LoadOrderUseCase {
+protocol LoadOrderUseCase {
+    func execute() -> AnyPublisher<Order, CabifyError>
+}
+
+struct LoadOrderUseCaseImpl: LoadOrderUseCase {
     @Injected(\.orderRepository)
     private var orderRepository
 
     func execute() -> AnyPublisher<Order, CabifyError> {
         orderRepository.loadOrder()
+            .map { order in
+                Order(items: order.items.sorted { $0.product.name < $1.product.name })
+            }
+            .eraseToAnyPublisher()
     }
 }

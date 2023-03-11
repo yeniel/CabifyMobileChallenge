@@ -9,7 +9,11 @@ import Foundation
 import Combine
 import Factory
 
-struct SaveOrderUseCase {
+protocol SaveOrderUseCase {
+    func execute(order: Order)
+}
+
+struct SaveOrderUseCaseImpl: SaveOrderUseCase {
     @Injected(\.orderRepository)
     private var orderRepository
 

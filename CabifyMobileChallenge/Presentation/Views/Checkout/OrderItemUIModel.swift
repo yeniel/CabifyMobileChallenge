@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct OrderItemUIModel: Identifiable {
-    let id: UUID
+struct OrderItemUIModel: Identifiable, Equatable {
+    let id: ProductType
     let productName: String
     let quantity: Int
     let formattedPrice: String

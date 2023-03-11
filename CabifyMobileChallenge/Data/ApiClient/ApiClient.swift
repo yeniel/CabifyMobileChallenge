@@ -10,7 +10,7 @@ import Combine
 
 protocol ApiClient {
     func get<T: Decodable>(path: String) -> AnyPublisher<T, CabifyError>
-    // Commented because in this small project is not needed yet
+    // Commented code because in this small project is not needed yet
 //    func post<T>(path: String, data: T) -> AnyPublisher<T, CabifyError>
 //    func put<T>(path: String, data: T) -> AnyPublisher<T, CabifyError>
 //    func patch<T>(path: String, data: T) -> AnyPublisher<T, CabifyError>

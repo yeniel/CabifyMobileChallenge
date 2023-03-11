@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		20CE73BDD3F7CE8906039759 /* Pods_CabifyMobileChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B493F300B8240393F7CC4C1B /* Pods_CabifyMobileChallengeTests.framework */; };
-		EFF1AF4924965FE1ACFE44D4 /* Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EA5FDD31D032D13A46120A /* Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests.framework */; };
 		FE24145429BA41B400CE63F4 /* PackDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145329BA41B400CE63F4 /* PackDiscount.swift */; };
 		FE24145629BA442E00CE63F4 /* BulkDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145529BA442E00CE63F4 /* BulkDiscount.swift */; };
 		FE24145829BA44A800CE63F4 /* ProductsRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145729BA44A800CE63F4 /* ProductsRepositoryImpl.swift */; };
@@ -20,7 +19,7 @@
 		FE24146529BA48B900CE63F4 /* ProductsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146429BA48B900CE63F4 /* ProductsDataSource.swift */; };
 		FE24146729BA49C600CE63F4 /* DtoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146629BA49C600CE63F4 /* DtoMapper.swift */; };
 		FE24146929BA4A3100CE63F4 /* ProductListDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146829BA4A3100CE63F4 /* ProductListDto.swift */; };
-		FE24146F29BA4F6700CE63F4 /* LoadProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146E29BA4F6700CE63F4 /* LoadProductsUseCase.swift */; };
+		FE24146F29BA4F6700CE63F4 /* LoadProductsUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146E29BA4F6700CE63F4 /* LoadProductsUseCaseImpl.swift */; };
 		FE24147129BA533E00CE63F4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147029BA533E00CE63F4 /* AppCoordinator.swift */; };
 		FE24147329BA535B00CE63F4 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147229BA535B00CE63F4 /* MainCoordinator.swift */; };
 		FE24147729BA543E00CE63F4 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147629BA543E00CE63F4 /* ProductListView.swift */; };
@@ -33,31 +32,84 @@
 		FE24148629BA963800CE63F4 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24148529BA963800CE63F4 /* Order.swift */; };
 		FE24148829BA965C00CE63F4 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24148729BA965C00CE63F4 /* OrderItem.swift */; };
 		FE6C2EEFA8B2D6973165CED1 /* Pods_CabifyMobileChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F1FC5845792A6E1DA531B8 /* Pods_CabifyMobileChallenge.framework */; };
+		FEBFF2C229BC9E4F0056E397 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBFF2C129BC9E4F0056E397 /* Mocks.swift */; };
+		FEBFF2C529BC9F5E0056E397 /* ObjectMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBFF2C329BC9E970056E397 /* ObjectMother.swift */; };
+		FEBFF2C629BC9FB50056E397 /* CabifyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3736D29B7FAF600291A19 /* CabifyError.swift */; };
+		FEBFF2C729BC9FC60056E397 /* OrderLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177D29BBE88C003D8E17 /* OrderLocalDataSource.swift */; };
+		FEBFF2C829BC9FC60056E397 /* ProductsApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146229BA48A600CE63F4 /* ProductsApiDataSource.swift */; };
+		FEBFF2C929BC9FC60056E397 /* OrderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177B29BBE832003D8E17 /* OrderDataSource.swift */; };
+		FEBFF2CA29BC9FC60056E397 /* OrderRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177929BBE7E4003D8E17 /* OrderRepositoryImpl.swift */; };
+		FEBFF2CB29BC9FC60056E397 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3736929B7FA0400291A19 /* ApiClient.swift */; };
+		FEBFF2CC29BC9FC60056E397 /* ProductsRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145729BA44A800CE63F4 /* ProductsRepositoryImpl.swift */; };
+		FEBFF2CD29BC9FC60056E397 /* ProductsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146429BA48B900CE63F4 /* ProductsDataSource.swift */; };
+		FEBFF2CE29BC9FCE0056E397 /* ProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145A29BA44E000CE63F4 /* ProductsRepository.swift */; };
+		FEBFF2CF29BC9FCE0056E397 /* GetDiscountsOfOrderItemUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178929BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift */; };
+		FEBFF2D029BC9FCE0056E397 /* LoadOrderUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178129BBF2BC003D8E17 /* LoadOrderUseCaseImpl.swift */; };
+		FEBFF2D129BC9FCE0056E397 /* SaveOrderUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177429BBE416003D8E17 /* SaveOrderUseCaseImpl.swift */; };
+		FEBFF2D229BC9FCE0056E397 /* OrderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177729BBE77A003D8E17 /* OrderRepository.swift */; };
+		FEBFF2D329BC9FCE0056E397 /* LoadProductsUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146E29BA4F6700CE63F4 /* LoadProductsUseCaseImpl.swift */; };
+		FEBFF2D429BC9FE50056E397 /* OrderItemDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178729BC03F9003D8E17 /* OrderItemDiscount.swift */; };
+		FEBFF2D529BC9FE50056E397 /* DiscountStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED58F1E29BB7E0A00016CF9 /* DiscountStrategy.swift */; };
+		FEBFF2D629BC9FE50056E397 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24148529BA963800CE63F4 /* Order.swift */; };
+		FEBFF2D729BC9FE50056E397 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24148729BA965C00CE63F4 /* OrderItem.swift */; };
+		FEBFF2D829BC9FE50056E397 /* ProductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145E29BA45EF00CE63F4 /* ProductType.swift */; };
+		FEBFF2D929BC9FE50056E397 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145C29BA453500CE63F4 /* Product.swift */; };
+		FEBFF2DB29BCA14B0056E397 /* UrlSessionApiClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBFF2DA29BCA14B0056E397 /* UrlSessionApiClientSpec.swift */; };
+		FEBFF2DC29BCA18A0056E397 /* ProductDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3736F29B7FB3500291A19 /* ProductDto.swift */; };
+		FEBFF2DD29BCA18A0056E397 /* ProductListDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146829BA4A3100CE63F4 /* ProductListDto.swift */; };
+		FEBFF2DE29BCA18A0056E397 /* DtoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146629BA49C600CE63F4 /* DtoMapper.swift */; };
+		FEBFF2DF29BCA18A0056E397 /* LocalMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177F29BBEA00003D8E17 /* LocalMapper.swift */; };
+		FEBFF2E029BCA18A0056E397 /* UrlSessionApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3736B29B7FA3B00291A19 /* UrlSessionApiClient.swift */; };
+		FEBFF2EC29BCA6330056E397 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = FEBFF2EB29BCA6330056E397 /* SnapshotTesting */; };
+		FEBFF2F129BCA7300056E397 /* OrderRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBFF2F029BCA7300056E397 /* OrderRepositorySpec.swift */; };
+		FEBFF2F329BCB1A40056E397 /* ProductsRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBFF2F229BCB1A40056E397 /* ProductsRepositorySpec.swift */; };
+		FEBFF2F929BCB42C0056E397 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = FEBFF2F829BCB42C0056E397 /* OHHTTPStubs */; };
+		FEBFF2FB29BCB42C0056E397 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FEBFF2FA29BCB42C0056E397 /* OHHTTPStubsSwift */; };
 		FED58F1F29BB7E0A00016CF9 /* DiscountStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED58F1E29BB7E0A00016CF9 /* DiscountStrategy.swift */; };
 		FED58F2129BB888500016CF9 /* DiscountUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED58F2029BB888500016CF9 /* DiscountUIModel.swift */; };
-		FEE0177529BBE416003D8E17 /* SaveOrderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177429BBE416003D8E17 /* SaveOrderUseCase.swift */; };
+		FED86D8429BCB4C5004637E6 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146029BA484A00CE63F4 /* Factory.swift */; };
+		FED86D8C29BCBFCA004637E6 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = FED86D8B29BCBFCA004637E6 /* Quick */; };
+		FED86D8E29BCC0D0004637E6 /* product_list.json in Resources */ = {isa = PBXBuildFile; fileRef = FED86D8D29BCC0D0004637E6 /* product_list.json */; };
+		FED86D8F29BCC1C2004637E6 /* BulkDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145529BA442E00CE63F4 /* BulkDiscount.swift */; };
+		FED86D9029BCC1C2004637E6 /* PackDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145329BA41B400CE63F4 /* PackDiscount.swift */; };
+		FED86D9129BCC1DB004637E6 /* CheckoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24148029BA5B8500CE63F4 /* CheckoutViewModel.swift */; };
+		FED86D9229BCC1DB004637E6 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147E29BA5B7D00CE63F4 /* CheckoutView.swift */; };
+		FED86D9329BCC1DB004637E6 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147829BA54FC00CE63F4 /* ProductListViewModel.swift */; };
+		FED86D9429BCC1DB004637E6 /* DiscountUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED58F2029BB888500016CF9 /* DiscountUIModel.swift */; };
+		FED86D9529BCC1DB004637E6 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147629BA543E00CE63F4 /* ProductListView.swift */; };
+		FED86D9629BCC1DB004637E6 /* ProductUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147C29BA55A600CE63F4 /* ProductUIModel.swift */; };
+		FED86D9729BCC1DB004637E6 /* ScreenStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147A29BA557C00CE63F4 /* ScreenStatus.swift */; };
+		FED86D9829BCC1DB004637E6 /* OrderItemUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178329BBF3E1003D8E17 /* OrderItemUIModel.swift */; };
+		FED86D9B29BCC2D7004637E6 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = FED86D9A29BCC2D7004637E6 /* Nimble */; };
+		FED86D9C29BCC470004637E6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147229BA535B00CE63F4 /* MainCoordinator.swift */; };
+		FED86D9D29BCC479004637E6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147029BA533E00CE63F4 /* AppCoordinator.swift */; };
+		FED86D9E29BCC4F1004637E6 /* CurrencyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24148329BA940100CE63F4 /* CurrencyUtils.swift */; };
+		FED86D9F29BCC500004637E6 /* CabifyMobileChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3731F29B7EF5200291A19 /* CabifyMobileChallengeApp.swift */; };
+		FED86DA529BCCEE7004637E6 /* PackDiscountSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED86DA429BCCEE7004637E6 /* PackDiscountSpec.swift */; };
+		FED86DA729BCD778004637E6 /* BulkDiscountSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED86DA629BCD778004637E6 /* BulkDiscountSpec.swift */; };
+		FED86DA929BCDF9B004637E6 /* GetDiscountsOfOrderItemUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED86DA829BCDF9B004637E6 /* GetDiscountsOfOrderItemUseCaseSpec.swift */; };
+		FED86DAB29BCE346004637E6 /* LoadProductsUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED86DAA29BCE346004637E6 /* LoadProductsUseCaseSpec.swift */; };
+		FED86DAE29BCEAD2004637E6 /* CurrencyUtilsSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED86DAD29BCEAD2004637E6 /* CurrencyUtilsSpec.swift */; };
+		FED86DB029BCEDEE004637E6 /* ProductListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED86DAF29BCEDEE004637E6 /* ProductListViewModelSpec.swift */; };
+		FED86DB229BCFB93004637E6 /* CheckoutViewModeSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED86DB129BCFB93004637E6 /* CheckoutViewModeSpec.swift */; };
+		FED86DB429BD0233004637E6 /* LoadOrderUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED86DB329BD0233004637E6 /* LoadOrderUseCaseSpec.swift */; };
+		FED86DB629BD051D004637E6 /* ProductListViewSnapshotSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED86DB529BD051D004637E6 /* ProductListViewSnapshotSpec.swift */; };
+		FED86DB829BD0CB6004637E6 /* CheckoutViewSnapshotSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED86DB729BD0CB6004637E6 /* CheckoutViewSnapshotSpec.swift */; };
+		FEE0177529BBE416003D8E17 /* SaveOrderUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177429BBE416003D8E17 /* SaveOrderUseCaseImpl.swift */; };
 		FEE0177829BBE77A003D8E17 /* OrderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177729BBE77A003D8E17 /* OrderRepository.swift */; };
 		FEE0177A29BBE7E4003D8E17 /* OrderRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177929BBE7E4003D8E17 /* OrderRepositoryImpl.swift */; };
 		FEE0177C29BBE832003D8E17 /* OrderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177B29BBE832003D8E17 /* OrderDataSource.swift */; };
 		FEE0177E29BBE88C003D8E17 /* OrderLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177D29BBE88C003D8E17 /* OrderLocalDataSource.swift */; };
 		FEE0178029BBEA00003D8E17 /* LocalMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177F29BBEA00003D8E17 /* LocalMapper.swift */; };
-		FEE0178229BBF2BC003D8E17 /* LoadOrderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178129BBF2BC003D8E17 /* LoadOrderUseCase.swift */; };
+		FEE0178229BBF2BC003D8E17 /* LoadOrderUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178129BBF2BC003D8E17 /* LoadOrderUseCaseImpl.swift */; };
 		FEE0178429BBF3E1003D8E17 /* OrderItemUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178329BBF3E1003D8E17 /* OrderItemUIModel.swift */; };
 		FEE0178829BC03F9003D8E17 /* OrderItemDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178729BC03F9003D8E17 /* OrderItemDiscount.swift */; };
 		FEE0178A29BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178929BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift */; };
 		FEF3732029B7EF5200291A19 /* CabifyMobileChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3731F29B7EF5200291A19 /* CabifyMobileChallengeApp.swift */; };
-		FEF3732229B7EF5300291A19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3732129B7EF5300291A19 /* ContentView.swift */; };
 		FEF3732429B7EF5500291A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF3732329B7EF5500291A19 /* Assets.xcassets */; };
 		FEF3732729B7EF5500291A19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF3732629B7EF5500291A19 /* Preview Assets.xcassets */; };
-		FEF3733129B7EF5600291A19 /* CabifyMobileChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3733029B7EF5600291A19 /* CabifyMobileChallengeTests.swift */; };
-		FEF3733B29B7EF5600291A19 /* CabifyMobileChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3733A29B7EF5600291A19 /* CabifyMobileChallengeUITests.swift */; };
-		FEF3733D29B7EF5600291A19 /* CabifyMobileChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3733C29B7EF5600291A19 /* CabifyMobileChallengeUITestsLaunchTests.swift */; };
 		FEF3735929B7F64200291A19 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = FEF3735829B7F64200291A19 /* Factory */; };
 		FEF3735C29B7F65800291A19 /* Stinsen in Frameworks */ = {isa = PBXBuildFile; productRef = FEF3735B29B7F65800291A19 /* Stinsen */; };
-		FEF3735F29B7F68C00291A19 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FEF3735E29B7F68C00291A19 /* OHHTTPStubsSwift */; };
-		FEF3736229B7F72C00291A19 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = FEF3736129B7F72C00291A19 /* SnapshotTesting */; };
-		FEF3736529B7F76000291A19 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = FEF3736429B7F76000291A19 /* Quick */; };
-		FEF3736829B7F7A500291A19 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = FEF3736729B7F7A500291A19 /* Nimble */; };
 		FEF3736A29B7FA0400291A19 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3736929B7FA0400291A19 /* ApiClient.swift */; };
 		FEF3736C29B7FA3B00291A19 /* UrlSessionApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3736B29B7FA3B00291A19 /* UrlSessionApiClient.swift */; };
 		FEF3736E29B7FAF600291A19 /* CabifyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3736D29B7FAF600291A19 /* CabifyError.swift */; };
@@ -66,13 +118,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		FEF3732D29B7EF5600291A19 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEF3731429B7EF5200291A19 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FEF3731B29B7EF5200291A19;
-			remoteInfo = CabifyMobileChallenge;
-		};
-		FEF3733729B7EF5600291A19 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FEF3731429B7EF5200291A19 /* Project object */;
 			proxyType = 1;
@@ -102,7 +147,7 @@
 		FE24146429BA48B900CE63F4 /* ProductsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDataSource.swift; sourceTree = "<group>"; };
 		FE24146629BA49C600CE63F4 /* DtoMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DtoMapper.swift; sourceTree = "<group>"; };
 		FE24146829BA4A3100CE63F4 /* ProductListDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListDto.swift; sourceTree = "<group>"; };
-		FE24146E29BA4F6700CE63F4 /* LoadProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductsUseCase.swift; sourceTree = "<group>"; };
+		FE24146E29BA4F6700CE63F4 /* LoadProductsUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductsUseCaseImpl.swift; sourceTree = "<group>"; };
 		FE24147029BA533E00CE63F4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FE24147229BA535B00CE63F4 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		FE24147629BA543E00CE63F4 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
@@ -114,28 +159,39 @@
 		FE24148329BA940100CE63F4 /* CurrencyUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyUtils.swift; sourceTree = "<group>"; };
 		FE24148529BA963800CE63F4 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		FE24148729BA965C00CE63F4 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		FEBFF2C129BC9E4F0056E397 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		FEBFF2C329BC9E970056E397 /* ObjectMother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMother.swift; sourceTree = "<group>"; };
+		FEBFF2DA29BCA14B0056E397 /* UrlSessionApiClientSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSessionApiClientSpec.swift; sourceTree = "<group>"; };
+		FEBFF2F029BCA7300056E397 /* OrderRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepositorySpec.swift; sourceTree = "<group>"; };
+		FEBFF2F229BCB1A40056E397 /* ProductsRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepositorySpec.swift; sourceTree = "<group>"; };
 		FED58F1E29BB7E0A00016CF9 /* DiscountStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountStrategy.swift; sourceTree = "<group>"; };
 		FED58F2029BB888500016CF9 /* DiscountUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountUIModel.swift; sourceTree = "<group>"; };
-		FEE0177429BBE416003D8E17 /* SaveOrderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveOrderUseCase.swift; sourceTree = "<group>"; };
+		FED86D8D29BCC0D0004637E6 /* product_list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = product_list.json; sourceTree = "<group>"; };
+		FED86DA429BCCEE7004637E6 /* PackDiscountSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackDiscountSpec.swift; sourceTree = "<group>"; };
+		FED86DA629BCD778004637E6 /* BulkDiscountSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkDiscountSpec.swift; sourceTree = "<group>"; };
+		FED86DA829BCDF9B004637E6 /* GetDiscountsOfOrderItemUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDiscountsOfOrderItemUseCaseSpec.swift; sourceTree = "<group>"; };
+		FED86DAA29BCE346004637E6 /* LoadProductsUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductsUseCaseSpec.swift; sourceTree = "<group>"; };
+		FED86DAD29BCEAD2004637E6 /* CurrencyUtilsSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyUtilsSpec.swift; sourceTree = "<group>"; };
+		FED86DAF29BCEDEE004637E6 /* ProductListViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModelSpec.swift; sourceTree = "<group>"; };
+		FED86DB129BCFB93004637E6 /* CheckoutViewModeSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewModeSpec.swift; sourceTree = "<group>"; };
+		FED86DB329BD0233004637E6 /* LoadOrderUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadOrderUseCaseSpec.swift; sourceTree = "<group>"; };
+		FED86DB529BD051D004637E6 /* ProductListViewSnapshotSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewSnapshotSpec.swift; sourceTree = "<group>"; };
+		FED86DB729BD0CB6004637E6 /* CheckoutViewSnapshotSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewSnapshotSpec.swift; sourceTree = "<group>"; };
+		FEE0177429BBE416003D8E17 /* SaveOrderUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveOrderUseCaseImpl.swift; sourceTree = "<group>"; };
 		FEE0177729BBE77A003D8E17 /* OrderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepository.swift; sourceTree = "<group>"; };
 		FEE0177929BBE7E4003D8E17 /* OrderRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepositoryImpl.swift; sourceTree = "<group>"; };
 		FEE0177B29BBE832003D8E17 /* OrderDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDataSource.swift; sourceTree = "<group>"; };
 		FEE0177D29BBE88C003D8E17 /* OrderLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderLocalDataSource.swift; sourceTree = "<group>"; };
 		FEE0177F29BBEA00003D8E17 /* LocalMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMapper.swift; sourceTree = "<group>"; };
-		FEE0178129BBF2BC003D8E17 /* LoadOrderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadOrderUseCase.swift; sourceTree = "<group>"; };
+		FEE0178129BBF2BC003D8E17 /* LoadOrderUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadOrderUseCaseImpl.swift; sourceTree = "<group>"; };
 		FEE0178329BBF3E1003D8E17 /* OrderItemUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemUIModel.swift; sourceTree = "<group>"; };
 		FEE0178729BC03F9003D8E17 /* OrderItemDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemDiscount.swift; sourceTree = "<group>"; };
 		FEE0178929BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDiscountsOfOrderItemUseCase.swift; sourceTree = "<group>"; };
 		FEF3731C29B7EF5200291A19 /* CabifyMobileChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CabifyMobileChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF3731F29B7EF5200291A19 /* CabifyMobileChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabifyMobileChallengeApp.swift; sourceTree = "<group>"; };
-		FEF3732129B7EF5300291A19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FEF3732329B7EF5500291A19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEF3732629B7EF5500291A19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FEF3732C29B7EF5600291A19 /* CabifyMobileChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CabifyMobileChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEF3733029B7EF5600291A19 /* CabifyMobileChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabifyMobileChallengeTests.swift; sourceTree = "<group>"; };
-		FEF3733629B7EF5600291A19 /* CabifyMobileChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CabifyMobileChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEF3733A29B7EF5600291A19 /* CabifyMobileChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabifyMobileChallengeUITests.swift; sourceTree = "<group>"; };
-		FEF3733C29B7EF5600291A19 /* CabifyMobileChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabifyMobileChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FEF3736929B7FA0400291A19 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		FEF3736B29B7FA3B00291A19 /* UrlSessionApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSessionApiClient.swift; sourceTree = "<group>"; };
 		FEF3736D29B7FAF600291A19 /* CabifyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabifyError.swift; sourceTree = "<group>"; };
@@ -157,19 +213,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEF3736829B7F7A500291A19 /* Nimble in Frameworks */,
-				FEF3736229B7F72C00291A19 /* SnapshotTesting in Frameworks */,
+				FEBFF2F929BCB42C0056E397 /* OHHTTPStubs in Frameworks */,
+				FED86D8C29BCBFCA004637E6 /* Quick in Frameworks */,
+				FEBFF2FB29BCB42C0056E397 /* OHHTTPStubsSwift in Frameworks */,
+				FED86D9B29BCC2D7004637E6 /* Nimble in Frameworks */,
+				FEBFF2EC29BCA6330056E397 /* SnapshotTesting in Frameworks */,
 				20CE73BDD3F7CE8906039759 /* Pods_CabifyMobileChallengeTests.framework in Frameworks */,
-				FEF3736529B7F76000291A19 /* Quick in Frameworks */,
-				FEF3735F29B7F68C00291A19 /* OHHTTPStubsSwift in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FEF3733329B7EF5600291A19 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EFF1AF4924965FE1ACFE44D4 /* Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,8 +270,6 @@
 		FE24147529BA540400CE63F4 /* Checkout */ = {
 			isa = PBXGroup;
 			children = (
-				FE24145329BA41B400CE63F4 /* PackDiscount.swift */,
-				FE24145529BA442E00CE63F4 /* BulkDiscount.swift */,
 				FE24147E29BA5B7D00CE63F4 /* CheckoutView.swift */,
 				FE24148029BA5B8500CE63F4 /* CheckoutViewModel.swift */,
 				FED58F2029BB888500016CF9 /* DiscountUIModel.swift */,
@@ -249,6 +296,74 @@
 			path = ProductsRepository;
 			sourceTree = "<group>";
 		};
+		FEBFF2BA29BC9A5D0056E397 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FEBFF2C329BC9E970056E397 /* ObjectMother.swift */,
+				FEBFF2C129BC9E4F0056E397 /* Mocks.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FEBFF2BB29BC9A6B0056E397 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FED86DAC29BCEAC4004637E6 /* Utils */,
+				FEBFF2BF29BC9A930056E397 /* ViewModels */,
+				FEBFF2BE29BC9A8E0056E397 /* Snapshots */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FEBFF2BC29BC9A710056E397 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FED86DA429BCCEE7004637E6 /* PackDiscountSpec.swift */,
+				FED86DA629BCD778004637E6 /* BulkDiscountSpec.swift */,
+				FED86DA829BCDF9B004637E6 /* GetDiscountsOfOrderItemUseCaseSpec.swift */,
+				FED86DAA29BCE346004637E6 /* LoadProductsUseCaseSpec.swift */,
+				FED86DB329BD0233004637E6 /* LoadOrderUseCaseSpec.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FEBFF2BD29BC9A780056E397 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FEBFF2DA29BCA14B0056E397 /* UrlSessionApiClientSpec.swift */,
+				FEBFF2F029BCA7300056E397 /* OrderRepositorySpec.swift */,
+				FEBFF2F229BCB1A40056E397 /* ProductsRepositorySpec.swift */,
+				FED86D8D29BCC0D0004637E6 /* product_list.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FEBFF2BE29BC9A8E0056E397 /* Snapshots */ = {
+			isa = PBXGroup;
+			children = (
+				FED86DB529BD051D004637E6 /* ProductListViewSnapshotSpec.swift */,
+				FED86DB729BD0CB6004637E6 /* CheckoutViewSnapshotSpec.swift */,
+			);
+			path = Snapshots;
+			sourceTree = "<group>";
+		};
+		FEBFF2BF29BC9A930056E397 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FED86DAF29BCEDEE004637E6 /* ProductListViewModelSpec.swift */,
+				FED86DB129BCFB93004637E6 /* CheckoutViewModeSpec.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FED86DAC29BCEAC4004637E6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FED86DAD29BCEAD2004637E6 /* CurrencyUtilsSpec.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		FEE0177629BBE75F003D8E17 /* OrderRepository */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,7 +379,6 @@
 			children = (
 				FEF3731E29B7EF5200291A19 /* CabifyMobileChallenge */,
 				FEF3732F29B7EF5600291A19 /* CabifyMobileChallengeTests */,
-				FEF3733929B7EF5600291A19 /* CabifyMobileChallengeUITests */,
 				FEF3731D29B7EF5200291A19 /* Products */,
 				7A68A026824563737F63041A /* Pods */,
 				D25EC355F36723EEB561747A /* Frameworks */,
@@ -276,7 +390,6 @@
 			children = (
 				FEF3731C29B7EF5200291A19 /* CabifyMobileChallenge.app */,
 				FEF3732C29B7EF5600291A19 /* CabifyMobileChallengeTests.xctest */,
-				FEF3733629B7EF5600291A19 /* CabifyMobileChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -288,7 +401,6 @@
 				FEF3734A29B7F1BF00291A19 /* Domain */,
 				FEF3734B29B7F1CA00291A19 /* Presentation */,
 				FEF3731F29B7EF5200291A19 /* CabifyMobileChallengeApp.swift */,
-				FEF3732129B7EF5300291A19 /* ContentView.swift */,
 				FEF3732329B7EF5500291A19 /* Assets.xcassets */,
 				FEF3732529B7EF5500291A19 /* Preview Content */,
 				FE24146029BA484A00CE63F4 /* Factory.swift */,
@@ -307,18 +419,12 @@
 		FEF3732F29B7EF5600291A19 /* CabifyMobileChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				FEF3733029B7EF5600291A19 /* CabifyMobileChallengeTests.swift */,
+				FEBFF2BD29BC9A780056E397 /* Data */,
+				FEBFF2BC29BC9A710056E397 /* Domain */,
+				FEBFF2BB29BC9A6B0056E397 /* Presentation */,
+				FEBFF2BA29BC9A5D0056E397 /* Utils */,
 			);
 			path = CabifyMobileChallengeTests;
-			sourceTree = "<group>";
-		};
-		FEF3733929B7EF5600291A19 /* CabifyMobileChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FEF3733A29B7EF5600291A19 /* CabifyMobileChallengeUITests.swift */,
-				FEF3733C29B7EF5600291A19 /* CabifyMobileChallengeUITestsLaunchTests.swift */,
-			);
-			path = CabifyMobileChallengeUITests;
 			sourceTree = "<group>";
 		};
 		FEF3734929B7F1B900291A19 /* Data */ = {
@@ -347,7 +453,6 @@
 			children = (
 				FE24148229BA93F200CE63F4 /* Utils */,
 				FEF3735529B7F47500291A19 /* Views */,
-				FEF3735229B7F42000291A19 /* Models */,
 				FEF3735129B7F41600291A19 /* Router */,
 			);
 			path = Presentation;
@@ -383,9 +488,9 @@
 		FEF3734F29B7F3A600291A19 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				FE24146E29BA4F6700CE63F4 /* LoadProductsUseCase.swift */,
-				FEE0177429BBE416003D8E17 /* SaveOrderUseCase.swift */,
-				FEE0178129BBF2BC003D8E17 /* LoadOrderUseCase.swift */,
+				FE24146E29BA4F6700CE63F4 /* LoadProductsUseCaseImpl.swift */,
+				FEE0177429BBE416003D8E17 /* SaveOrderUseCaseImpl.swift */,
+				FEE0178129BBF2BC003D8E17 /* LoadOrderUseCaseImpl.swift */,
 				FEE0178929BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift */,
 			);
 			path = UseCases;
@@ -394,6 +499,8 @@
 		FEF3735029B7F3AB00291A19 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FE24145329BA41B400CE63F4 /* PackDiscount.swift */,
+				FE24145529BA442E00CE63F4 /* BulkDiscount.swift */,
 				FEF3736D29B7FAF600291A19 /* CabifyError.swift */,
 				FE24145C29BA453500CE63F4 /* Product.swift */,
 				FE24145E29BA45EF00CE63F4 /* ProductType.swift */,
@@ -412,13 +519,6 @@
 				FE24147229BA535B00CE63F4 /* MainCoordinator.swift */,
 			);
 			path = Router;
-			sourceTree = "<group>";
-		};
-		FEF3735229B7F42000291A19 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		FEF3735429B7F45E00291A19 /* Mappers */ = {
@@ -482,33 +582,15 @@
 			);
 			name = CabifyMobileChallengeTests;
 			packageProductDependencies = (
-				FEF3735E29B7F68C00291A19 /* OHHTTPStubsSwift */,
-				FEF3736129B7F72C00291A19 /* SnapshotTesting */,
-				FEF3736429B7F76000291A19 /* Quick */,
-				FEF3736729B7F7A500291A19 /* Nimble */,
+				FEBFF2EB29BCA6330056E397 /* SnapshotTesting */,
+				FEBFF2F829BCB42C0056E397 /* OHHTTPStubs */,
+				FEBFF2FA29BCB42C0056E397 /* OHHTTPStubsSwift */,
+				FED86D8B29BCBFCA004637E6 /* Quick */,
+				FED86D9A29BCC2D7004637E6 /* Nimble */,
 			);
 			productName = CabifyMobileChallengeTests;
 			productReference = FEF3732C29B7EF5600291A19 /* CabifyMobileChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		FEF3733529B7EF5600291A19 /* CabifyMobileChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FEF3734629B7EF5600291A19 /* Build configuration list for PBXNativeTarget "CabifyMobileChallengeUITests" */;
-			buildPhases = (
-				80459FF1E7A07DC6865922A9 /* [CP] Check Pods Manifest.lock */,
-				FEF3733229B7EF5600291A19 /* Sources */,
-				FEF3733329B7EF5600291A19 /* Frameworks */,
-				FEF3733429B7EF5600291A19 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FEF3733829B7EF5600291A19 /* PBXTargetDependency */,
-			);
-			name = CabifyMobileChallengeUITests;
-			productName = CabifyMobileChallengeUITests;
-			productReference = FEF3733629B7EF5600291A19 /* CabifyMobileChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -527,10 +609,6 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = FEF3731B29B7EF5200291A19;
 					};
-					FEF3733529B7EF5600291A19 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = FEF3731B29B7EF5200291A19;
-					};
 				};
 			};
 			buildConfigurationList = FEF3731729B7EF5200291A19 /* Build configuration list for PBXProject "CabifyMobileChallenge" */;
@@ -545,10 +623,10 @@
 			packageReferences = (
 				FEF3735729B7F64200291A19 /* XCRemoteSwiftPackageReference "Factory" */,
 				FEF3735A29B7F65800291A19 /* XCRemoteSwiftPackageReference "stinsen" */,
-				FEF3735D29B7F68C00291A19 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
-				FEF3736029B7F72C00291A19 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
-				FEF3736329B7F76000291A19 /* XCRemoteSwiftPackageReference "Quick" */,
-				FEF3736629B7F7A500291A19 /* XCRemoteSwiftPackageReference "Nimble" */,
+				FEBFF2EA29BCA6330056E397 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				FEBFF2F729BCB42C0056E397 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
+				FED86D8A29BCBFCA004637E6 /* XCRemoteSwiftPackageReference "Quick" */,
+				FED86D9929BCC2D7004637E6 /* XCRemoteSwiftPackageReference "Nimble" */,
 			);
 			productRefGroup = FEF3731D29B7EF5200291A19 /* Products */;
 			projectDirPath = "";
@@ -556,7 +634,6 @@
 			targets = (
 				FEF3731B29B7EF5200291A19 /* CabifyMobileChallenge */,
 				FEF3732B29B7EF5600291A19 /* CabifyMobileChallengeTests */,
-				FEF3733529B7EF5600291A19 /* CabifyMobileChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -575,13 +652,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FEF3733429B7EF5600291A19 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				FED86D8E29BCC0D0004637E6 /* product_list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,28 +675,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-CabifyMobileChallenge-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		80459FF1E7A07DC6865922A9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -693,10 +742,9 @@
 				FE24145429BA41B400CE63F4 /* PackDiscount.swift in Sources */,
 				FEF3737029B7FB3500291A19 /* ProductDto.swift in Sources */,
 				FED58F2129BB888500016CF9 /* DiscountUIModel.swift in Sources */,
-				FEF3732229B7EF5300291A19 /* ContentView.swift in Sources */,
 				FE24146729BA49C600CE63F4 /* DtoMapper.swift in Sources */,
 				FE24147B29BA557C00CE63F4 /* ScreenStatus.swift in Sources */,
-				FE24146F29BA4F6700CE63F4 /* LoadProductsUseCase.swift in Sources */,
+				FE24146F29BA4F6700CE63F4 /* LoadProductsUseCaseImpl.swift in Sources */,
 				FE24148129BA5B8500CE63F4 /* CheckoutViewModel.swift in Sources */,
 				FE24146129BA484A00CE63F4 /* Factory.swift in Sources */,
 				FE24145D29BA453500CE63F4 /* Product.swift in Sources */,
@@ -706,7 +754,7 @@
 				FEE0178829BC03F9003D8E17 /* OrderItemDiscount.swift in Sources */,
 				FED58F1F29BB7E0A00016CF9 /* DiscountStrategy.swift in Sources */,
 				FEE0177E29BBE88C003D8E17 /* OrderLocalDataSource.swift in Sources */,
-				FEE0178229BBF2BC003D8E17 /* LoadOrderUseCase.swift in Sources */,
+				FEE0178229BBF2BC003D8E17 /* LoadOrderUseCaseImpl.swift in Sources */,
 				FE24147929BA54FC00CE63F4 /* ProductListViewModel.swift in Sources */,
 				FE24148429BA940100CE63F4 /* CurrencyUtils.swift in Sources */,
 				FE24147129BA533E00CE63F4 /* AppCoordinator.swift in Sources */,
@@ -719,7 +767,7 @@
 				FEF3736A29B7FA0400291A19 /* ApiClient.swift in Sources */,
 				FEE0178029BBEA00003D8E17 /* LocalMapper.swift in Sources */,
 				FE24145F29BA45EF00CE63F4 /* ProductType.swift in Sources */,
-				FEE0177529BBE416003D8E17 /* SaveOrderUseCase.swift in Sources */,
+				FEE0177529BBE416003D8E17 /* SaveOrderUseCaseImpl.swift in Sources */,
 				FE24148629BA963800CE63F4 /* Order.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -728,16 +776,61 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEF3733129B7EF5600291A19 /* CabifyMobileChallengeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FEF3733229B7EF5600291A19 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FEF3733D29B7EF5600291A19 /* CabifyMobileChallengeUITestsLaunchTests.swift in Sources */,
-				FEF3733B29B7EF5600291A19 /* CabifyMobileChallengeUITests.swift in Sources */,
+				FED86D9829BCC1DB004637E6 /* OrderItemUIModel.swift in Sources */,
+				FED86D9C29BCC470004637E6 /* MainCoordinator.swift in Sources */,
+				FEBFF2D429BC9FE50056E397 /* OrderItemDiscount.swift in Sources */,
+				FED86D9729BCC1DB004637E6 /* ScreenStatus.swift in Sources */,
+				FED86DB029BCEDEE004637E6 /* ProductListViewModelSpec.swift in Sources */,
+				FEBFF2C629BC9FB50056E397 /* CabifyError.swift in Sources */,
+				FED86D9D29BCC479004637E6 /* AppCoordinator.swift in Sources */,
+				FEBFF2D729BC9FE50056E397 /* OrderItem.swift in Sources */,
+				FEBFF2D629BC9FE50056E397 /* Order.swift in Sources */,
+				FED86D8F29BCC1C2004637E6 /* BulkDiscount.swift in Sources */,
+				FED86D8429BCB4C5004637E6 /* Factory.swift in Sources */,
+				FED86D9E29BCC4F1004637E6 /* CurrencyUtils.swift in Sources */,
+				FEBFF2CB29BC9FC60056E397 /* ApiClient.swift in Sources */,
+				FEBFF2CE29BC9FCE0056E397 /* ProductsRepository.swift in Sources */,
+				FED86DB229BCFB93004637E6 /* CheckoutViewModeSpec.swift in Sources */,
+				FEBFF2CA29BC9FC60056E397 /* OrderRepositoryImpl.swift in Sources */,
+				FED86D9F29BCC500004637E6 /* CabifyMobileChallengeApp.swift in Sources */,
+				FEBFF2C229BC9E4F0056E397 /* Mocks.swift in Sources */,
+				FEBFF2F129BCA7300056E397 /* OrderRepositorySpec.swift in Sources */,
+				FED86D9429BCC1DB004637E6 /* DiscountUIModel.swift in Sources */,
+				FEBFF2D029BC9FCE0056E397 /* LoadOrderUseCaseImpl.swift in Sources */,
+				FED86DB829BD0CB6004637E6 /* CheckoutViewSnapshotSpec.swift in Sources */,
+				FED86DA929BCDF9B004637E6 /* GetDiscountsOfOrderItemUseCaseSpec.swift in Sources */,
+				FEBFF2D129BC9FCE0056E397 /* SaveOrderUseCaseImpl.swift in Sources */,
+				FED86D9529BCC1DB004637E6 /* ProductListView.swift in Sources */,
+				FEBFF2DD29BCA18A0056E397 /* ProductListDto.swift in Sources */,
+				FED86DA529BCCEE7004637E6 /* PackDiscountSpec.swift in Sources */,
+				FED86D9329BCC1DB004637E6 /* ProductListViewModel.swift in Sources */,
+				FED86D9129BCC1DB004637E6 /* CheckoutViewModel.swift in Sources */,
+				FEBFF2DB29BCA14B0056E397 /* UrlSessionApiClientSpec.swift in Sources */,
+				FEBFF2E029BCA18A0056E397 /* UrlSessionApiClient.swift in Sources */,
+				FED86D9229BCC1DB004637E6 /* CheckoutView.swift in Sources */,
+				FEBFF2CC29BC9FC60056E397 /* ProductsRepositoryImpl.swift in Sources */,
+				FEBFF2DC29BCA18A0056E397 /* ProductDto.swift in Sources */,
+				FED86DB629BD051D004637E6 /* ProductListViewSnapshotSpec.swift in Sources */,
+				FED86DB429BD0233004637E6 /* LoadOrderUseCaseSpec.swift in Sources */,
+				FEBFF2F329BCB1A40056E397 /* ProductsRepositorySpec.swift in Sources */,
+				FED86D9029BCC1C2004637E6 /* PackDiscount.swift in Sources */,
+				FED86DA729BCD778004637E6 /* BulkDiscountSpec.swift in Sources */,
+				FEBFF2D929BC9FE50056E397 /* Product.swift in Sources */,
+				FED86D9629BCC1DB004637E6 /* ProductUIModel.swift in Sources */,
+				FEBFF2D529BC9FE50056E397 /* DiscountStrategy.swift in Sources */,
+				FED86DAB29BCE346004637E6 /* LoadProductsUseCaseSpec.swift in Sources */,
+				FEBFF2D829BC9FE50056E397 /* ProductType.swift in Sources */,
+				FEBFF2CF29BC9FCE0056E397 /* GetDiscountsOfOrderItemUseCase.swift in Sources */,
+				FEBFF2CD29BC9FC60056E397 /* ProductsDataSource.swift in Sources */,
+				FEBFF2DF29BCA18A0056E397 /* LocalMapper.swift in Sources */,
+				FEBFF2C829BC9FC60056E397 /* ProductsApiDataSource.swift in Sources */,
+				FEBFF2D229BC9FCE0056E397 /* OrderRepository.swift in Sources */,
+				FEBFF2DE29BCA18A0056E397 /* DtoMapper.swift in Sources */,
+				FEBFF2D329BC9FCE0056E397 /* LoadProductsUseCaseImpl.swift in Sources */,
+				FEBFF2C929BC9FC60056E397 /* OrderDataSource.swift in Sources */,
+				FED86DAE29BCEAD2004637E6 /* CurrencyUtilsSpec.swift in Sources */,
+				FEBFF2C529BC9F5E0056E397 /* ObjectMother.swift in Sources */,
+				FEBFF2C729BC9FC60056E397 /* OrderLocalDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -748,11 +841,6 @@
 			isa = PBXTargetDependency;
 			target = FEF3731B29B7EF5200291A19 /* CabifyMobileChallenge */;
 			targetProxy = FEF3732D29B7EF5600291A19 /* PBXContainerItemProxy */;
-		};
-		FEF3733829B7EF5600291A19 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FEF3731B29B7EF5200291A19 /* CabifyMobileChallenge */;
-			targetProxy = FEF3733729B7EF5600291A19 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -973,44 +1061,6 @@
 			};
 			name = Release;
 		};
-		FEF3734729B7EF5600291A19 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68ADF0F22ABAD1DEEEAA2C9D /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SVW6HF2MTV;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yeniellandestoy.CabifyMobileChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CabifyMobileChallenge;
-			};
-			name = Debug;
-		};
-		FEF3734829B7EF5600291A19 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F09DCC79985BEDD9F21DC87 /* Pods-CabifyMobileChallenge-CabifyMobileChallengeUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SVW6HF2MTV;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yeniellandestoy.CabifyMobileChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CabifyMobileChallenge;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1041,18 +1091,41 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FEF3734629B7EF5600291A19 /* Build configuration list for PBXNativeTarget "CabifyMobileChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FEF3734729B7EF5600291A19 /* Debug */,
-				FEF3734829B7EF5600291A19 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FEBFF2EA29BCA6330056E397 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		FEBFF2F729BCB42C0056E397 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		FED86D8A29BCBFCA004637E6 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.1;
+			};
+		};
+		FED86D9929BCC2D7004637E6 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.0.0;
+			};
+		};
 		FEF3735729B7F64200291A19 /* XCRemoteSwiftPackageReference "Factory" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hmlongco/Factory";
@@ -1069,41 +1142,34 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		FEF3735D29B7F68C00291A19 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-		FEF3736029B7F72C00291A19 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-		FEF3736329B7F76000291A19 /* XCRemoteSwiftPackageReference "Quick" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/JosephDuffy/Quick";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		FEF3736629B7F7A500291A19 /* XCRemoteSwiftPackageReference "Nimble" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Quick/Nimble";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FEBFF2EB29BCA6330056E397 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEBFF2EA29BCA6330056E397 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		FEBFF2F829BCB42C0056E397 /* OHHTTPStubs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEBFF2F729BCB42C0056E397 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubs;
+		};
+		FEBFF2FA29BCB42C0056E397 /* OHHTTPStubsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEBFF2F729BCB42C0056E397 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubsSwift;
+		};
+		FED86D8B29BCBFCA004637E6 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FED86D8A29BCBFCA004637E6 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		FED86D9A29BCC2D7004637E6 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FED86D9929BCC2D7004637E6 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
 		FEF3735829B7F64200291A19 /* Factory */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FEF3735729B7F64200291A19 /* XCRemoteSwiftPackageReference "Factory" */;
@@ -1113,26 +1179,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FEF3735A29B7F65800291A19 /* XCRemoteSwiftPackageReference "stinsen" */;
 			productName = Stinsen;
-		};
-		FEF3735E29B7F68C00291A19 /* OHHTTPStubsSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FEF3735D29B7F68C00291A19 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
-			productName = OHHTTPStubsSwift;
-		};
-		FEF3736129B7F72C00291A19 /* SnapshotTesting */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FEF3736029B7F72C00291A19 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
-			productName = SnapshotTesting;
-		};
-		FEF3736429B7F76000291A19 /* Quick */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FEF3736329B7F76000291A19 /* XCRemoteSwiftPackageReference "Quick" */;
-			productName = Quick;
-		};
-		FEF3736729B7F7A500291A19 /* Nimble */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FEF3736629B7F7A500291A19 /* XCRemoteSwiftPackageReference "Nimble" */;
-			productName = Nimble;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

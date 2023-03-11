@@ -7,9 +7,7 @@
 
 import Foundation
 
-struct OrderItem {
-    let productType: ProductType
-    let productName: String
-    let productPrice: Double
+struct OrderItem: Equatable {
+    let product: Product
     var quantity: Int
 }

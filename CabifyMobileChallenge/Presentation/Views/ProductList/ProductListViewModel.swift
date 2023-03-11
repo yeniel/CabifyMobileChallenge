@@ -38,8 +38,7 @@ class ProductListViewModel: ObservableObject {
                 receiveValue: { products in
                     self.products = products.map {
                         ProductUIModel(
-                            id: UUID(),
-                            type: $0.type,
+                            id: $0.type,
                             name: $0.name,
                             price: $0.price,
                             formattedPrice: $0.price.currencyFormat,
@@ -52,13 +51,16 @@ class ProductListViewModel: ObservableObject {
             .store(in: &cancellables)
     }
 
-    func routeToCheckout() {
+    func checkout() {
+        saveOrder()
+        routeToCheckout()
+    }
+
+    private func saveOrder() {
         let orderItems = products.filter { $0.quantity > 0 }
             .map {
                 OrderItem(
-                    productType: $0.type,
-                    productName: $0.name,
-                    productPrice: $0.price,
+                    product: Product(type: $0.id, name: $0.name, price: $0.price),
                     quantity: $0.quantity
                 )
             }
@@ -66,6 +68,9 @@ class ProductListViewModel: ObservableObject {
         let order = Order(items: orderItems)
 
         saveOrderUseCase.execute(order: order)
+    }
+
+    private func routeToCheckout() {
         coordinator.routeToCheckout()
     }
 }

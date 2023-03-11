@@ -30,10 +30,10 @@
     {
       "identity" : "nimble",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Quick/Nimble",
+      "location" : "https://github.com/Quick/Nimble.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "3d9785ade1bc9f51127a4911d609bd38e32730ea"
+        "revision" : "1f3bde57bde12f5e7b07909848c071e9b73d6edc",
+        "version" : "10.0.0"
       }
     },
     {
@@ -48,10 +48,10 @@
     {
       "identity" : "quick",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/JosephDuffy/Quick",
+      "location" : "https://github.com/Quick/Quick.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "a1a1c2c6e60b284dea2b21558989a98d9e6b6c1c"
+        "revision" : "f9d519828bb03dfc8125467d8f7b93131951124c",
+        "version" : "5.0.1"
       }
     },
     {

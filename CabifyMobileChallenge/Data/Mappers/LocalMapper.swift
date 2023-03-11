@@ -12,9 +12,9 @@ struct LocalMapper {
         [
             "items": order.items.map {
                 [
-                    "productType": $0.productType.rawValue,
-                    "productName": $0.productName,
-                    "productPrice": $0.productPrice,
+                    "productType": $0.product.type.rawValue,
+                    "productName": $0.product.name,
+                    "productPrice": $0.product.price,
                     "quantity": $0.quantity
                 ]
             }
@@ -48,9 +48,11 @@ struct LocalMapper {
 
             items.append(
                 OrderItem(
-                    productType: productType,
-                    productName: productName,
-                    productPrice: productPrice,
+                    product: Product(
+                        type: productType,
+                        name: productName,
+                        price: productPrice
+                    ),
                     quantity: quantity
                 )
             )
