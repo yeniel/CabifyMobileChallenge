@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		20CE73BDD3F7CE8906039759 /* Pods_CabifyMobileChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B493F300B8240393F7CC4C1B /* Pods_CabifyMobileChallengeTests.framework */; };
 		EFF1AF4924965FE1ACFE44D4 /* Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EA5FDD31D032D13A46120A /* Pods_CabifyMobileChallenge_CabifyMobileChallengeUITests.framework */; };
-		FE24145429BA41B400CE63F4 /* PackDiscountDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145329BA41B400CE63F4 /* PackDiscountDto.swift */; };
-		FE24145629BA442E00CE63F4 /* BulkDiscountDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145529BA442E00CE63F4 /* BulkDiscountDto.swift */; };
+		FE24145429BA41B400CE63F4 /* PackDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145329BA41B400CE63F4 /* PackDiscount.swift */; };
+		FE24145629BA442E00CE63F4 /* BulkDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145529BA442E00CE63F4 /* BulkDiscount.swift */; };
 		FE24145829BA44A800CE63F4 /* ProductsRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145729BA44A800CE63F4 /* ProductsRepositoryImpl.swift */; };
 		FE24145B29BA44E000CE63F4 /* ProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145A29BA44E000CE63F4 /* ProductsRepository.swift */; };
 		FE24145D29BA453500CE63F4 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145C29BA453500CE63F4 /* Product.swift */; };
@@ -20,8 +20,7 @@
 		FE24146529BA48B900CE63F4 /* ProductsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146429BA48B900CE63F4 /* ProductsDataSource.swift */; };
 		FE24146729BA49C600CE63F4 /* DtoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146629BA49C600CE63F4 /* DtoMapper.swift */; };
 		FE24146929BA4A3100CE63F4 /* ProductListDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146829BA4A3100CE63F4 /* ProductListDto.swift */; };
-		FE24146D29BA4EC600CE63F4 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146C29BA4EC600CE63F4 /* UseCase.swift */; };
-		FE24146F29BA4F6700CE63F4 /* GetProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146E29BA4F6700CE63F4 /* GetProductsUseCase.swift */; };
+		FE24146F29BA4F6700CE63F4 /* LoadProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146E29BA4F6700CE63F4 /* LoadProductsUseCase.swift */; };
 		FE24147129BA533E00CE63F4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147029BA533E00CE63F4 /* AppCoordinator.swift */; };
 		FE24147329BA535B00CE63F4 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147229BA535B00CE63F4 /* MainCoordinator.swift */; };
 		FE24147729BA543E00CE63F4 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147629BA543E00CE63F4 /* ProductListView.swift */; };
@@ -34,6 +33,18 @@
 		FE24148629BA963800CE63F4 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24148529BA963800CE63F4 /* Order.swift */; };
 		FE24148829BA965C00CE63F4 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24148729BA965C00CE63F4 /* OrderItem.swift */; };
 		FE6C2EEFA8B2D6973165CED1 /* Pods_CabifyMobileChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6F1FC5845792A6E1DA531B8 /* Pods_CabifyMobileChallenge.framework */; };
+		FED58F1F29BB7E0A00016CF9 /* DiscountStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED58F1E29BB7E0A00016CF9 /* DiscountStrategy.swift */; };
+		FED58F2129BB888500016CF9 /* DiscountUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED58F2029BB888500016CF9 /* DiscountUIModel.swift */; };
+		FEE0177529BBE416003D8E17 /* SaveOrderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177429BBE416003D8E17 /* SaveOrderUseCase.swift */; };
+		FEE0177829BBE77A003D8E17 /* OrderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177729BBE77A003D8E17 /* OrderRepository.swift */; };
+		FEE0177A29BBE7E4003D8E17 /* OrderRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177929BBE7E4003D8E17 /* OrderRepositoryImpl.swift */; };
+		FEE0177C29BBE832003D8E17 /* OrderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177B29BBE832003D8E17 /* OrderDataSource.swift */; };
+		FEE0177E29BBE88C003D8E17 /* OrderLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177D29BBE88C003D8E17 /* OrderLocalDataSource.swift */; };
+		FEE0178029BBEA00003D8E17 /* LocalMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177F29BBEA00003D8E17 /* LocalMapper.swift */; };
+		FEE0178229BBF2BC003D8E17 /* LoadOrderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178129BBF2BC003D8E17 /* LoadOrderUseCase.swift */; };
+		FEE0178429BBF3E1003D8E17 /* OrderItemUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178329BBF3E1003D8E17 /* OrderItemUIModel.swift */; };
+		FEE0178829BC03F9003D8E17 /* OrderItemDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178729BC03F9003D8E17 /* OrderItemDiscount.swift */; };
+		FEE0178A29BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178929BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift */; };
 		FEF3732029B7EF5200291A19 /* CabifyMobileChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3731F29B7EF5200291A19 /* CabifyMobileChallengeApp.swift */; };
 		FEF3732229B7EF5300291A19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3732129B7EF5300291A19 /* ContentView.swift */; };
 		FEF3732429B7EF5500291A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF3732329B7EF5500291A19 /* Assets.xcassets */; };
@@ -80,8 +91,8 @@
 		B493F300B8240393F7CC4C1B /* Pods_CabifyMobileChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabifyMobileChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3EA5C9A09F0924C68737241 /* Pods-CabifyMobileChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CabifyMobileChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-CabifyMobileChallengeTests/Pods-CabifyMobileChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		F6F1FC5845792A6E1DA531B8 /* Pods_CabifyMobileChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CabifyMobileChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE24145329BA41B400CE63F4 /* PackDiscountDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackDiscountDto.swift; sourceTree = "<group>"; };
-		FE24145529BA442E00CE63F4 /* BulkDiscountDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkDiscountDto.swift; sourceTree = "<group>"; };
+		FE24145329BA41B400CE63F4 /* PackDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackDiscount.swift; sourceTree = "<group>"; };
+		FE24145529BA442E00CE63F4 /* BulkDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulkDiscount.swift; sourceTree = "<group>"; };
 		FE24145729BA44A800CE63F4 /* ProductsRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepositoryImpl.swift; sourceTree = "<group>"; };
 		FE24145A29BA44E000CE63F4 /* ProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepository.swift; sourceTree = "<group>"; };
 		FE24145C29BA453500CE63F4 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -91,8 +102,7 @@
 		FE24146429BA48B900CE63F4 /* ProductsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDataSource.swift; sourceTree = "<group>"; };
 		FE24146629BA49C600CE63F4 /* DtoMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DtoMapper.swift; sourceTree = "<group>"; };
 		FE24146829BA4A3100CE63F4 /* ProductListDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListDto.swift; sourceTree = "<group>"; };
-		FE24146C29BA4EC600CE63F4 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
-		FE24146E29BA4F6700CE63F4 /* GetProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsUseCase.swift; sourceTree = "<group>"; };
+		FE24146E29BA4F6700CE63F4 /* LoadProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductsUseCase.swift; sourceTree = "<group>"; };
 		FE24147029BA533E00CE63F4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FE24147229BA535B00CE63F4 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		FE24147629BA543E00CE63F4 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
@@ -104,6 +114,18 @@
 		FE24148329BA940100CE63F4 /* CurrencyUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyUtils.swift; sourceTree = "<group>"; };
 		FE24148529BA963800CE63F4 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		FE24148729BA965C00CE63F4 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		FED58F1E29BB7E0A00016CF9 /* DiscountStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountStrategy.swift; sourceTree = "<group>"; };
+		FED58F2029BB888500016CF9 /* DiscountUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountUIModel.swift; sourceTree = "<group>"; };
+		FEE0177429BBE416003D8E17 /* SaveOrderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveOrderUseCase.swift; sourceTree = "<group>"; };
+		FEE0177729BBE77A003D8E17 /* OrderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepository.swift; sourceTree = "<group>"; };
+		FEE0177929BBE7E4003D8E17 /* OrderRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepositoryImpl.swift; sourceTree = "<group>"; };
+		FEE0177B29BBE832003D8E17 /* OrderDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDataSource.swift; sourceTree = "<group>"; };
+		FEE0177D29BBE88C003D8E17 /* OrderLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderLocalDataSource.swift; sourceTree = "<group>"; };
+		FEE0177F29BBEA00003D8E17 /* LocalMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMapper.swift; sourceTree = "<group>"; };
+		FEE0178129BBF2BC003D8E17 /* LoadOrderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadOrderUseCase.swift; sourceTree = "<group>"; };
+		FEE0178329BBF3E1003D8E17 /* OrderItemUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemUIModel.swift; sourceTree = "<group>"; };
+		FEE0178729BC03F9003D8E17 /* OrderItemDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemDiscount.swift; sourceTree = "<group>"; };
+		FEE0178929BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDiscountsOfOrderItemUseCase.swift; sourceTree = "<group>"; };
 		FEF3731C29B7EF5200291A19 /* CabifyMobileChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CabifyMobileChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF3731F29B7EF5200291A19 /* CabifyMobileChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CabifyMobileChallengeApp.swift; sourceTree = "<group>"; };
 		FEF3732129B7EF5300291A19 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -181,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				FE24145A29BA44E000CE63F4 /* ProductsRepository.swift */,
+				FEE0177729BBE77A003D8E17 /* OrderRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -198,8 +221,12 @@
 		FE24147529BA540400CE63F4 /* Checkout */ = {
 			isa = PBXGroup;
 			children = (
+				FE24145329BA41B400CE63F4 /* PackDiscount.swift */,
+				FE24145529BA442E00CE63F4 /* BulkDiscount.swift */,
 				FE24147E29BA5B7D00CE63F4 /* CheckoutView.swift */,
 				FE24148029BA5B8500CE63F4 /* CheckoutViewModel.swift */,
+				FED58F2029BB888500016CF9 /* DiscountUIModel.swift */,
+				FEE0178329BBF3E1003D8E17 /* OrderItemUIModel.swift */,
 			);
 			path = Checkout;
 			sourceTree = "<group>";
@@ -220,6 +247,16 @@
 				FE24145729BA44A800CE63F4 /* ProductsRepositoryImpl.swift */,
 			);
 			path = ProductsRepository;
+			sourceTree = "<group>";
+		};
+		FEE0177629BBE75F003D8E17 /* OrderRepository */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0177929BBE7E4003D8E17 /* OrderRepositoryImpl.swift */,
+				FEE0177B29BBE832003D8E17 /* OrderDataSource.swift */,
+				FEE0177D29BBE88C003D8E17 /* OrderLocalDataSource.swift */,
+			);
+			path = OrderRepository;
 			sourceTree = "<group>";
 		};
 		FEF3731329B7EF5200291A19 = {
@@ -319,6 +356,7 @@
 		FEF3734C29B7F36A00291A19 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				FEE0177629BBE75F003D8E17 /* OrderRepository */,
 				FE24148B29BA96C500CE63F4 /* ProductsRepository */,
 			);
 			path = Repositories;
@@ -337,8 +375,6 @@
 			isa = PBXGroup;
 			children = (
 				FEF3736F29B7FB3500291A19 /* ProductDto.swift */,
-				FE24145329BA41B400CE63F4 /* PackDiscountDto.swift */,
-				FE24145529BA442E00CE63F4 /* BulkDiscountDto.swift */,
 				FE24146829BA4A3100CE63F4 /* ProductListDto.swift */,
 			);
 			path = Dto;
@@ -347,8 +383,10 @@
 		FEF3734F29B7F3A600291A19 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
-				FE24146C29BA4EC600CE63F4 /* UseCase.swift */,
-				FE24146E29BA4F6700CE63F4 /* GetProductsUseCase.swift */,
+				FE24146E29BA4F6700CE63F4 /* LoadProductsUseCase.swift */,
+				FEE0177429BBE416003D8E17 /* SaveOrderUseCase.swift */,
+				FEE0178129BBF2BC003D8E17 /* LoadOrderUseCase.swift */,
+				FEE0178929BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -361,6 +399,8 @@
 				FE24145E29BA45EF00CE63F4 /* ProductType.swift */,
 				FE24148529BA963800CE63F4 /* Order.swift */,
 				FE24148729BA965C00CE63F4 /* OrderItem.swift */,
+				FED58F1E29BB7E0A00016CF9 /* DiscountStrategy.swift */,
+				FEE0178729BC03F9003D8E17 /* OrderItemDiscount.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -385,6 +425,7 @@
 			isa = PBXGroup;
 			children = (
 				FE24146629BA49C600CE63F4 /* DtoMapper.swift */,
+				FEE0177F29BBEA00003D8E17 /* LocalMapper.swift */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -640,34 +681,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE24147D29BA55A600CE63F4 /* ProductUIModel.swift in Sources */,
+				FEE0177829BBE77A003D8E17 /* OrderRepository.swift in Sources */,
 				FE24147729BA543E00CE63F4 /* ProductListView.swift in Sources */,
 				FEF3736C29B7FA3B00291A19 /* UrlSessionApiClient.swift in Sources */,
+				FEE0177C29BBE832003D8E17 /* OrderDataSource.swift in Sources */,
+				FEE0177A29BBE7E4003D8E17 /* OrderRepositoryImpl.swift in Sources */,
 				FE24147329BA535B00CE63F4 /* MainCoordinator.swift in Sources */,
+				FEE0178A29BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift in Sources */,
 				FE24145B29BA44E000CE63F4 /* ProductsRepository.swift in Sources */,
 				FE24146529BA48B900CE63F4 /* ProductsDataSource.swift in Sources */,
-				FE24145429BA41B400CE63F4 /* PackDiscountDto.swift in Sources */,
+				FE24145429BA41B400CE63F4 /* PackDiscount.swift in Sources */,
 				FEF3737029B7FB3500291A19 /* ProductDto.swift in Sources */,
+				FED58F2129BB888500016CF9 /* DiscountUIModel.swift in Sources */,
 				FEF3732229B7EF5300291A19 /* ContentView.swift in Sources */,
 				FE24146729BA49C600CE63F4 /* DtoMapper.swift in Sources */,
 				FE24147B29BA557C00CE63F4 /* ScreenStatus.swift in Sources */,
-				FE24146F29BA4F6700CE63F4 /* GetProductsUseCase.swift in Sources */,
+				FE24146F29BA4F6700CE63F4 /* LoadProductsUseCase.swift in Sources */,
 				FE24148129BA5B8500CE63F4 /* CheckoutViewModel.swift in Sources */,
 				FE24146129BA484A00CE63F4 /* Factory.swift in Sources */,
 				FE24145D29BA453500CE63F4 /* Product.swift in Sources */,
 				FE24146329BA48A600CE63F4 /* ProductsApiDataSource.swift in Sources */,
-				FE24145629BA442E00CE63F4 /* BulkDiscountDto.swift in Sources */,
+				FE24145629BA442E00CE63F4 /* BulkDiscount.swift in Sources */,
 				FE24148829BA965C00CE63F4 /* OrderItem.swift in Sources */,
+				FEE0178829BC03F9003D8E17 /* OrderItemDiscount.swift in Sources */,
+				FED58F1F29BB7E0A00016CF9 /* DiscountStrategy.swift in Sources */,
+				FEE0177E29BBE88C003D8E17 /* OrderLocalDataSource.swift in Sources */,
+				FEE0178229BBF2BC003D8E17 /* LoadOrderUseCase.swift in Sources */,
 				FE24147929BA54FC00CE63F4 /* ProductListViewModel.swift in Sources */,
 				FE24148429BA940100CE63F4 /* CurrencyUtils.swift in Sources */,
 				FE24147129BA533E00CE63F4 /* AppCoordinator.swift in Sources */,
 				FEF3736E29B7FAF600291A19 /* CabifyError.swift in Sources */,
+				FEE0178429BBF3E1003D8E17 /* OrderItemUIModel.swift in Sources */,
 				FEF3732029B7EF5200291A19 /* CabifyMobileChallengeApp.swift in Sources */,
 				FE24147F29BA5B7D00CE63F4 /* CheckoutView.swift in Sources */,
 				FE24146929BA4A3100CE63F4 /* ProductListDto.swift in Sources */,
 				FE24145829BA44A800CE63F4 /* ProductsRepositoryImpl.swift in Sources */,
-				FE24146D29BA4EC600CE63F4 /* UseCase.swift in Sources */,
 				FEF3736A29B7FA0400291A19 /* ApiClient.swift in Sources */,
+				FEE0178029BBEA00003D8E17 /* LocalMapper.swift in Sources */,
 				FE24145F29BA45EF00CE63F4 /* ProductType.swift in Sources */,
+				FEE0177529BBE416003D8E17 /* SaveOrderUseCase.swift in Sources */,
 				FE24148629BA963800CE63F4 /* Order.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

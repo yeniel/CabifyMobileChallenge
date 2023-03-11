@@ -9,11 +9,9 @@ import Foundation
 import Combine
 import Factory
 
-struct LoadProductsUseCase: UseCase {
+struct LoadProductsUseCase {
     @Injected(\.productsRepository)
     private var productsRepository
-
-    typealias ResponseType = AnyPublisher<[Product], CabifyError>
 
     func execute() -> AnyPublisher<[Product], CabifyError> {
         productsRepository.loadProducts()

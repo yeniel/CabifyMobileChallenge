@@ -8,8 +8,10 @@
 import Foundation
 
 struct ProductUIModel: Identifiable, Equatable {
-    let id: UUID
+    var id: UUID
+    let type: ProductType
     let name: String
+    let price: Double
     let formattedPrice: String
     var quantity: Int
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ProductType {
+enum ProductType: String {
     case voucher
     case tshirt
     case mug

@@ -19,6 +19,14 @@ extension Container {
         Factory(self) { ProductsApiDataSource() }
     }
 
+    var orderRepository: Factory<OrderRepository> {
+        Factory(self) { OrderRepositoryImpl() }
+    }
+
+    var orderLocalDataSource: Factory<OrderDataSource> {
+        Factory(self) { OrderLocalDataSource() }
+    }
+
     // MARK: Services
 
     var urlSessionApiClient: Factory<ApiClient> {
@@ -31,9 +39,25 @@ extension Container {
         Factory(self) { DtoMapper() }
     }
 
+    var localMapper: Factory<LocalMapper> {
+        Factory(self) { LocalMapper() }
+    }
+
     // MARK: Use Cases
 
     var loadProductsUseCase: Factory<LoadProductsUseCase> {
         Factory(self) { LoadProductsUseCase() }
+    }
+
+    var saveOrderUseCase: Factory<SaveOrderUseCase> {
+        Factory(self) { SaveOrderUseCase() }
+    }
+
+    var loadOrderUseCase: Factory<LoadOrderUseCase> {
+        Factory(self) { LoadOrderUseCase() }
+    }
+
+    var getDiscountsOfOrderItemUseCase: Factory<GetDiscountsOfOrderItemUseCase> {
+        Factory(self) { GetDiscountsOfOrderItemUseCase() }
     }
 }

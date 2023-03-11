@@ -23,6 +23,9 @@ class ProductListViewModel: ObservableObject {
     @Injected(\.loadProductsUseCase)
     private var loadProductsUseCase: LoadProductsUseCase
 
+    @Injected(\.saveOrderUseCase)
+    private var saveOrderUseCase: SaveOrderUseCase
+
     private let coordinator: MainCoordinatorProtocol
     private var cancellables = Set<AnyCancellable>()
 
@@ -36,7 +39,9 @@ class ProductListViewModel: ObservableObject {
                     self.products = products.map {
                         ProductUIModel(
                             id: UUID(),
+                            type: $0.type,
                             name: $0.name,
+                            price: $0.price,
                             formattedPrice: $0.price.currencyFormat,
                             quantity: 0
                         )
@@ -48,6 +53,19 @@ class ProductListViewModel: ObservableObject {
     }
 
     func routeToCheckout() {
+        let orderItems = products.filter { $0.quantity > 0 }
+            .map {
+                OrderItem(
+                    productType: $0.type,
+                    productName: $0.name,
+                    productPrice: $0.price,
+                    quantity: $0.quantity
+                )
+            }
+
+        let order = Order(items: orderItems)
+
+        saveOrderUseCase.execute(order: order)
         coordinator.routeToCheckout()
     }
 }

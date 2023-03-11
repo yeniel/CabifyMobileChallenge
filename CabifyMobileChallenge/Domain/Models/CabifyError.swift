@@ -9,4 +9,5 @@ import Foundation
 
 enum CabifyError: Error {
     case networkError
+    case unknown
 }

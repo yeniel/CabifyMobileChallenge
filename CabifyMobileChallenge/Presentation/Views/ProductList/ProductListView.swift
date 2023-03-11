@@ -25,14 +25,21 @@ struct ProductListView: View {
                 ProgressView()
             }
         case .loaded:
-            List {
-                ForEach($viewModel.products) { $product in
-                    ProductCell(product: $product)
+            VStack {
+                List {
+                    ForEach($viewModel.products) { $product in
+                        ProductCell(product: $product)
+                    }
                 }
+                Spacer()
+                Button {
+                    viewModel.routeToCheckout()
+                } label: {
+                  Text("Checkout")
+                }
+                .buttonStyle(.bordered)
             }
-            .alert("Unknown Error", isPresented: $viewModel.showError) {
-                Button("OK", role: .cancel) { }
-            }
+
         }
     }
 }
@@ -45,14 +52,14 @@ struct ProductCell: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(product.name)
-                    .font(.callout)
+                    .font(.body)
                 Text(product.formattedPrice)
                     .font(.title3)
                     .fontWeight(.bold)
             }
             Spacer()
             Text(String(product.quantity))
-                .font(.title2)
+                .font(.title3)
                 .foregroundColor(Color.red)
             Stepper("", value: $product.quantity, in: 0...Int.max)
                 .labelsHidden()

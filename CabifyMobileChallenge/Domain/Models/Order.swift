@@ -8,5 +8,5 @@
 import Foundation
 
 struct Order {
-    var items: [ProductType: Int] = [:]
+    var items: [OrderItem] = []
 }

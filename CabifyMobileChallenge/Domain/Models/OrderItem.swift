@@ -8,6 +8,8 @@
 import Foundation
 
 struct OrderItem {
-    let product: ProductType
+    let productType: ProductType
+    let productName: String
+    let productPrice: Double
     var quantity: Int
 }
