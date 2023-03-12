@@ -14,8 +14,4 @@ target 'CabifyMobileChallenge' do
     # Pods for testing
   end
 
-  target 'CabifyMobileChallengeUITests' do
-    # Pods for testing
-  end
-
 end
