@@ -1,5 +1,4 @@
 # Cabify Mobile Challenge
-
 [![Build Status](https://app.bitrise.io/app/b461c3510d5187c1/status.svg?token=GF2fIRdDXlW0HnxxoJ1yDg&branch=master)](https://app.bitrise.io/app/b461c3510d5187c1)
 [![codecov](https://codecov.io/gh/yeniel/TelefonicaTest/branch/master/graph/badge.svg?token=P6H8927N5F)](https://codecov.io/gh/yeniel/TelefonicaTest)
 [![Language](https://img.shields.io/static/v1.svg?label=language&message=Swift%205&color=FA7343&logo=swift&style=flat-square)](https://swift.org)
@@ -8,7 +7,6 @@
 This is my implementation of a the Cabify Mobile Challenge. The specification readme is [here](https://github.com/cabify/MobileChallenge).
 
 ## Table of contents
-
 1. [Installation](#installation)
 2. [Pods and Packages](#pods-and-packages)
 3. [Architecture and Design Patterns](#architecture-and-design-patterns)
@@ -18,7 +16,6 @@ This is my implementation of a the Cabify Mobile Challenge. The specification re
 
 
 ## Installation
-
 1. Download the project:
 ```
 git clone https://github.com/yeniel/CabifyMobileChallenge
@@ -26,7 +23,6 @@ git clone https://github.com/yeniel/CabifyMobileChallenge
 2. Wait until all Swift Package Manager are fetched
 
 ## Pods and Packages
-
 1. CocoaPods
 	- [SwiftLint](https://github.com/realm/SwiftLint): Linter I have used to static code analysis. 
 2. Swift Package Manager
@@ -38,7 +34,6 @@ git clone https://github.com/yeniel/CabifyMobileChallenge
 	- [OHHTTPStubs](https://github.com/AliSoftware/OHHTTPStubs): Stub network requests to test data layer.
 
 ## Architecture and Design Patterns
-
 First of all, I want to say that when I thought this app it was as a big project. Therefore this project, in the future, could have more features, and all the current ones could be more complex.
 In some parts the design patterns seem like an overkill or maybe add needless complexity, but I chose them to show my knowledge.
 
@@ -50,7 +45,6 @@ I tried to follow the bases of a **Clean Architecture** and the **SOLID** princi
 - Lower cohesion
 
 ### Data Layer
-
 #### Repositories
 I implemented the **repository pattern** for products and order requests. The repository pattern is good to manage collection of items.
 
@@ -76,7 +70,7 @@ Core models of the business.
 #### Discount Strategy
 To modelize the discounts I chose the *Strategy* pattern. I identify two kind of discounts from the current specifications, pack and bulk discount.
 These discounts models are generics. If we want to and a new discount, for example 3x2 for Mugs, we have just to add a new `PackDiscount` to the list of discounts.
-An imporovement, could be get the parameters to configure the discounts from backend. We could implement a discount repository to get the list of discounts
+An improvement, could be get the parameters to configure the discounts from backend. We could implement a discount repository to get the list of discounts
 
 #### Pack Discount
 The pack discount has the pack quantity and the paid quantity, in a 2x1 pack discount the pack quantity is 2 and the paid quantity is 1.
@@ -85,7 +79,6 @@ The pack discount has the pack quantity and the paid quantity, in a 2x1 pack dis
 The bulk discount has a minimum quantity and the discount percentage, in the current specifications the min quantity is 3 and the percentage is 5%
 
 #### Errors
-
 The model `CabifyError` is used through all the app to map the errors to a business error.
 
 #### Use Cases
@@ -131,7 +124,7 @@ The **coverage** is **81,2%**
 
 #### Presentation
 - ViewModels: Test presentation logic.
-- Views: Snapshots to test all the design. The snapshot images are in [Snapsgots](CabifyMobileChallengeTests/Presentation/Snapshots)
+- Views: Snapshots to test all the design. The snapshot images are in [Snapsgots](CabifyMobileChallengeTests/Presentation/Snapshots/__Snapshots__/)
 
 ## CI
 I chose **Bitrise** as CI. I created a workflow with a trigger on every push on main branch. You can see the badge of the status in the top of this README, and if you click on it you will see the Bitrise builds. There also a badge of code coverage.
