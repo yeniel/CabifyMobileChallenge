@@ -37,7 +37,7 @@ git clone https://github.com/yeniel/CabifyMobileChallenge
 
 ## Architecture and Design Patterns
 First of all, I want to say that when I thought this app it was as a big project. Therefore this project, in the future, could have more features, and all the current ones could be more complex.
-In some parts the design patterns seem like an overkill or maybe add needless complexity, but I chose them to show my knowledge.
+In some parts the design patterns seem like an overkill or maybe add needless complexity (eg. For this example is better async/await than Combine), but I chose them to show my knowledge.
 
 I tried to follow the bases of a **Clean Architecture** and the **SOLID** principles. The intention is to have a testable, robust and scalable code and avoid bad smells like:
 - God entities.
@@ -72,10 +72,10 @@ Core models of the business.
 #### Discount Strategy
 To modelize the discounts I chose the *Strategy* pattern. I identify two kind of discounts from the current specifications, pack and bulk discount.
 These discounts models are generics. If we want to add a new discount, for example 3x2 for Mugs, we have just to add a new `PackDiscount` to the list of discounts.
-An improvement, could be get the parameters to configure the discounts from backend. We could implement a discount repository to get the list of discounts
+An improvement, could be get the parameters to configure the discounts from backend. We could implement a discount repository to get the list of discounts. It is useful if we want to add new discount of pack o bulk with other parameters in production, without a release.
 
 #### Pack Discount
-The pack discount has the pack quantity and the paid quantity. In a 2x1 pack discount the pack quantity is 2 and the paid quantity is 1.
+The pack discount has a pack quantity and a paid quantity. In a 2x1 pack discount the pack quantity is 2 and the paid quantity is 1.
 
 #### Bulk Discount
 The bulk discount has a minimum quantity and a discount percentage. In the current specifications the min quantity is 3 and the percentage is 5%.
