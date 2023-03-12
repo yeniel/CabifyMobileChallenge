@@ -22,17 +22,17 @@ https://user-images.githubusercontent.com/4428478/224559639-031f8be2-22b5-435f-a
 ```
 git clone https://github.com/yeniel/CabifyMobileChallenge
 ```
-2. Wait until all Swift Package Manager are fetched
+2. Wait until all Swift Package Manager are fetched.
 
 ## Pods and Packages
 1. CocoaPods
 	- [SwiftLint](https://github.com/realm/SwiftLint): Linter I have used to static code analysis. 
 2. Swift Package Manager
-	- [Factory](https://github.com/hmlongco/Factory): Dependency injector, based on container-based dependency injection pattern
-	- [Stinsen](https://github.com/rundfunk47/stinsen): Router based on coordinator pattern
-	- [Quick](https://github.com/Quick/Quick): Unit tests
-	- [Nimble](https://github.com/Quick/Nimble): Unit test assertions
-	- [SnapshotTesting](https://github.com/pointfreeco/swift-snapshot-testing): Snapshot tests for views
+	- [Factory](https://github.com/hmlongco/Factory): Dependency injector, based on container-based dependency injection pattern.
+	- [Stinsen](https://github.com/rundfunk47/stinsen): Router based on coordinator pattern.
+	- [Quick](https://github.com/Quick/Quick): Unit tests.
+	- [Nimble](https://github.com/Quick/Nimble): Unit test assertions.
+	- [SnapshotTesting](https://github.com/pointfreeco/swift-snapshot-testing): Snapshot tests for views.
 	- [OHHTTPStubs](https://github.com/AliSoftware/OHHTTPStubs): Stub network requests to test data layer.
 
 ## Architecture and Design Patterns
@@ -40,11 +40,11 @@ First of all, I want to say that when I thought this app it was as a big project
 In some parts the design patterns seem like an overkill or maybe add needless complexity, but I chose them to show my knowledge.
 
 I tried to follow the bases of a **Clean Architecture** and the **SOLID** principles. The intention is to have a testable, robust and scalable code and avoid the following bad smells:
-- God entities
-- Repeated code
-- Non testable code
-- Coupled code
-- Lower cohesion
+- God entities.
+- Repeated code.
+- Non testable code.
+- Coupled code.
+- Lower cohesion.
 
 ### Data Layer
 #### Repositories
@@ -60,10 +60,10 @@ In the order repository I added a local data source as an example of persistence
 The concrete implementation of the api client is based in `URLSession`.
 
 #### Dtos
-I used data transfer object to parse the json of the api responses using the `Codable` protocol
+I used data transfer object to parse the json of the api responses using the `Codable` protocol.
 
 #### Dto Mapper
-A mapper to map the dtos to domain models
+A mapper to map the dtos to domain models.
 
 ### Domain Layer
 #### Models
@@ -71,26 +71,26 @@ Core models of the business.
 
 #### Discount Strategy
 To modelize the discounts I chose the *Strategy* pattern. I identify two kind of discounts from the current specifications, pack and bulk discount.
-These discounts models are generics. If we want to and a new discount, for example 3x2 for Mugs, we have just to add a new `PackDiscount` to the list of discounts.
+These discounts models are generics. If we want to add a new discount, for example 3x2 for Mugs, we have just to add a new `PackDiscount` to the list of discounts.
 An improvement, could be get the parameters to configure the discounts from backend. We could implement a discount repository to get the list of discounts
 
 #### Pack Discount
-The pack discount has the pack quantity and the paid quantity, in a 2x1 pack discount the pack quantity is 2 and the paid quantity is 1.
+The pack discount has the pack quantity and the paid quantity. In a 2x1 pack discount the pack quantity is 2 and the paid quantity is 1.
 
 #### Bulk Discount
-The bulk discount has a minimum quantity and the discount percentage, in the current specifications the min quantity is 3 and the percentage is 5%
+The bulk discount has a minimum quantity and a discount percentage. In the current specifications the min quantity is 3 and the percentage is 5%.
 
 #### Errors
 The model `CabifyError` is used through all the app to map the errors to a business error.
 
 #### Use Cases
-I used use cases to add the business logic, for example, the use case to get the discounts of an order item. Also, use cases helps me to **deacoplate** the layers. The comunication between the presentation layer and data layer is made throught the use cases (I don't have any repository in viewmodels)
+I used use cases to add the business logic, for example, the use case to get the discounts of an order item. Also, use cases helps me to **deacoplate** the layers. The comunication between the presentation layer and data layer is made throught the use cases (I don't have any repository in viewmodels).
 
 ### Presentation
 I implemented the **MVVM pattern**. The views are in **SwiftUI** and I used **Combine** through all the app for asynch process.
 
 #### ViewModels
-The view models contain the presentation logic
+The view models contain the presentation logic.
 
 #### Routing
 I used the *Stinsen* package to deacoplate the navigation logic from the views using the coordinator pattern. This approach helps me to test better in case I have to add more complexity to the navigation in the future.
@@ -100,9 +100,9 @@ I mapped domain models to ui models. The intention is to give the views a more s
 
 ## Unit Tests
 
-I used *Quick* for all tests and *Nimble* for the assertions. The `ObjectMother` provides me mocked models. I try to follow as much as I can **FIRST** principles
+I used *Quick* for all tests and *Nimble* for the assertions. The `ObjectMother` provides me mocked models. I try to follow as much as I can **FIRST** principles.
 
-To increase the speed I change a little the entry point of the app (`CabifyMobileChallengeApp.swift`).
+To increase the speed I change a little the entry point of the app, in `CabifyMobileChallengeApp.swift`.
 I cut the app to a simple view in case we are running the tests.
 
 ### Scheme Configuration
@@ -132,8 +132,8 @@ The **coverage** is **81,2%**
 I chose **Bitrise** as CI. I created a workflow with a trigger on every push on main branch. You can see the badge of the status in the top of this README, and if you click on it you will see the Bitrise builds. There also a badge of code coverage.
 
 I added the following steps:
-1. Build
-2. Run tests
+1. Build.
+2. Run tests.
 3. Send coverage to [Codecov](https://about.codecov.io/)
 
 ## Known Issues
