@@ -1,6 +1,6 @@
 # Cabify Mobile Challenge
-[![Build Status](https://app.bitrise.io/app/b461c3510d5187c1/status.svg?token=GF2fIRdDXlW0HnxxoJ1yDg&branch=master)](https://app.bitrise.io/app/b461c3510d5187c1)
-[![codecov](https://codecov.io/gh/yeniel/TelefonicaTest/branch/master/graph/badge.svg?token=P6H8927N5F)](https://codecov.io/gh/yeniel/TelefonicaTest)
+[![Build Status](https://app.bitrise.io/app/2090efaaa9c5b60f/status.svg?token=37bZfVE7kij9TBj0G_ujtQ&branch=main)](https://app.bitrise.io/app/2090efaaa9c5b60f)
+[![codecov](https://codecov.io/gh/yeniel/CabifyMobileChallenge/branch/main/graph/badge.svg?token=XW3SS8R6OB)](https://codecov.io/gh/yeniel/CabifyMobileChallenge)
 [![Language](https://img.shields.io/static/v1.svg?label=language&message=Swift%205&color=FA7343&logo=swift&style=flat-square)](https://swift.org)
 [![Platform](https://img.shields.io/static/v1.svg?label=platforms&message=iOS%20&logo=apple&style=flat-square)](https://apple.com)
 
