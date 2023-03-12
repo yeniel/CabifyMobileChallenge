@@ -135,6 +135,10 @@ I added the following steps:
 3. Send coverage to [Codecov](https://about.codecov.io/)
 
 ## Known Issues
-	- In the console appears the message *"NavigationLink presenting a value must appear inside a NavigationContent-based NavigationView. Link will be disabled."*. Tracking issue [here](https://github.com/rundfunk47/stinsen/issues/29#issuecomment-1194301980)
+In the console appears the message:
+
+ *NavigationLink presenting a value must appear inside a NavigationContent-based NavigationView. Link will be disabled.*.
+
+Tracking issue [here](https://github.com/rundfunk47/stinsen/issues/29#issuecomment-1194301980)
 
 
