@@ -72,7 +72,7 @@ Core models of the business.
 #### Discount Strategy
 To modelize the discounts I chose the *Strategy* pattern. I identify two kind of discounts from the current specifications, pack and bulk discount.
 These discounts models are generics. If we want to add a new discount, for example 3x2 for Mugs, we have just to add a new `PackDiscount` to the list of discounts.
-An improvement, could be get the parameters to configure the discounts from backend. We could implement a discount repository to get the list of discounts. It is useful if we want to add new discount of pack o bulk with other parameters in production, without a release.
+An improvement, could be get the parameters to configure the discounts from backend. We could implement a discount repository to get the list of discounts. It is useful if we want to add new discount with other parameters in production, without a release.
 
 #### Pack Discount
 The pack discount has a pack quantity and a paid quantity. In a 2x1 pack discount the pack quantity is 2 and the paid quantity is 1.
@@ -117,12 +117,14 @@ The **coverage** is **81,2%**
 
 ![Coverage](ReadmeAssets/XcodeCoverage.png)
 
+### Subjects Under Test
+
 #### Data
 - Repositories: Test map dto to domain model.
 - UrlSessionApiClient: Test json parse to Codable Dtos. I used OHHTTPStubs to stub request using mocked jsons.
 
 #### Domain
-- Test business logic.
+- Use Cases: Test business logic.
 
 #### Presentation
 - ViewModels: Test presentation logic.
