@@ -13,11 +13,13 @@ import OHHTTPStubsSwift
 import Quick
 import Nimble
 
+// swiftlint:disable line_length
+// swiftlint:disable function_body_length
+
 class UrlSessionApiClientSpec: QuickSpec {
-    // sswiftlint:disable line_length
+
     var host = "gist.githubusercontent.com"
-    var productsPath = "/palcalde/6c19259bd32dd6aafa327fa557859c2f/raw/ba51779474a150ee4367cda4f4ffacdcca479887/Products.json"
-    // sswiftlint:enable line_length
+    var productsPath = "palcalde/6c19259bd32dd6aafa327fa557859c2f/raw/ba51779474a150ee4367cda4f4ffacdcca479887/Products.json"
 
     override func spec() {
         var cancellables = Set<AnyCancellable>()
@@ -27,7 +29,7 @@ class UrlSessionApiClientSpec: QuickSpec {
         beforeEach {
             productListDto = nil
             error = nil
-            self.setupStubs()
+            setupStubs()
         }
 
         describe("GIVEN a UrlSessionApiClient") {
@@ -49,7 +51,7 @@ class UrlSessionApiClientSpec: QuickSpec {
             context("WHEN request and receive an error") {
                 it("THEN publishs a CabifyError.networkError") {
                     stub(condition: isHost(self.host)
-                         && isPath(self.productsPath)
+                         && isPath("/\(self.productsPath)")
                          && isMethodGET()
                     ) { _ in
                         let notConnectedError = NSError(
@@ -77,16 +79,19 @@ class UrlSessionApiClientSpec: QuickSpec {
                 }
             }
         }
-    }
 
-    func setupStubs() {
-        stub(condition: isHost(host)
-             && isPath(productsPath)
-             && isMethodGET()
-        ) { _ in
-            let stubPath = OHPathForFile("product_list.json", type(of: self))
+        func setupStubs() {
+            stub(condition: isHost(host)
+                 && isPath("/\(productsPath)")
+                 && isMethodGET()
+            ) { _ in
+                let stubPath = OHPathForFile("product_list.json", type(of: self))
 
-            return fixture(filePath: stubPath!, headers: ["Content-Type": "application/json"])
+                return fixture(filePath: stubPath!, headers: ["Content-Type": "application/json"])
+            }
         }
     }
 }
+
+// swiftlint:enable line_length
+// swiftlint:enable function_body_length

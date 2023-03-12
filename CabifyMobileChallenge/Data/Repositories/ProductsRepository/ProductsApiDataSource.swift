@@ -14,7 +14,7 @@ struct ProductsApiDataSource: ProductsDataSource {
     private var apiClient: ApiClient
 
     // swiftlint:disable line_length
-    private var path = "/palcalde/6c19259bd32dd6aafa327fa557859c2f/raw/ba51779474a150ee4367cda4f4ffacdcca479887/Products.json"
+    private var path = "palcalde/6c19259bd32dd6aafa327fa557859c2f/raw/ba51779474a150ee4367cda4f4ffacdcca479887/Products.json"
     // swiftlint:enable line_length
 
     func loadProducts() -> AnyPublisher<ProductListDto, CabifyError> {
