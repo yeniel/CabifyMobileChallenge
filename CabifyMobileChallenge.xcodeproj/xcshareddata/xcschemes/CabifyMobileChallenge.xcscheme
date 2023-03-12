@@ -41,41 +41,6 @@
                BlueprintName = "CabifyMobileChallengeTests"
                ReferencedContainer = "container:CabifyMobileChallenge.xcodeproj">
             </BuildableReference>
-            <SkippedTests>
-               <Test
-                  Identifier = "BulkDiscountSpec">
-               </Test>
-               <Test
-                  Identifier = "CheckoutViewModelSpec">
-               </Test>
-               <Test
-                  Identifier = "CurrencyUtilsSpec">
-               </Test>
-               <Test
-                  Identifier = "GetDiscountsOfOrderItemUseCaseSpec">
-               </Test>
-               <Test
-                  Identifier = "LoadOrderUseCaseSpec">
-               </Test>
-               <Test
-                  Identifier = "LoadProductsUseCaseSpec">
-               </Test>
-               <Test
-                  Identifier = "OrderRepositorySpec">
-               </Test>
-               <Test
-                  Identifier = "PackDiscountSpec">
-               </Test>
-               <Test
-                  Identifier = "ProductListViewModelSpec">
-               </Test>
-               <Test
-                  Identifier = "ProductsRepositorySpec">
-               </Test>
-               <Test
-                  Identifier = "UrlSessionApiClientSpec">
-               </Test>
-            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
