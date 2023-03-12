@@ -50,6 +50,9 @@
                   Identifier = "CheckoutViewModelSpec">
                </Test>
                <Test
+                  Identifier = "CheckoutViewSnapshotSpec">
+               </Test>
+               <Test
                   Identifier = "CurrencyUtilsSpec">
                </Test>
                <Test
