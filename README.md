@@ -6,6 +6,8 @@
 
 This is my implementation of a the Cabify Mobile Challenge. The specification readme is [here](https://github.com/cabify/MobileChallenge).
 
+https://user-images.githubusercontent.com/4428478/224559325-eea9c28f-ce34-4e1a-ae76-51c64d5269ac.mov
+
 ## Table of contents
 1. [Installation](#installation)
 2. [Pods and Packages](#pods-and-packages)
