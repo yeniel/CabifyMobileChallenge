@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// The bulk discount has a minimum quantity and the discount percentage,
+/// in the current specifications the min quantity is 3 and the percentage is 5%
 struct BulkDiscount: DiscountStrategy {
     let product: ProductType
     let minQuantity: Int

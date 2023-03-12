@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// The pack discount has the pack quantity and the paid quantity,
+/// in a 2x1 pack discount the pack quantity is 2 and the paid quantity is 1.
 struct PackDiscount: DiscountStrategy {
     let product: ProductType
     let packQuantity: Int

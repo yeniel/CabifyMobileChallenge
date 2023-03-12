@@ -7,6 +7,10 @@
 
 import Foundation
 
+/// These discounts models are generics. If we want to and a new discount, for example 3x2 for Mugs,
+/// we have just to add a new `PackDiscount` to the list of discounts.
+/// An improvement, could be get the parameters to configure the discounts from backend.
+/// We could implement a discount repository to get the list of discounts
 struct GetDiscountsOfOrderItemUseCase {
     let discountStrategies: [DiscountStrategy] = [
         PackDiscount(product: .voucher, packQuantity: 2, paidQuantity: 1),

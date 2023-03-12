@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// To modelize the discounts I chose the *Strategy* pattern.
+/// I identify two kind of discounts from the current specifications, pack and bulk discount.
 protocol DiscountStrategy {
     var description: String { get }
 
