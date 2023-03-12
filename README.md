@@ -39,7 +39,7 @@ git clone https://github.com/yeniel/CabifyMobileChallenge
 First of all, I want to say that when I thought this app it was as a big project. Therefore this project, in the future, could have more features, and all the current ones could be more complex.
 In some parts the design patterns seem like an overkill or maybe add needless complexity, but I chose them to show my knowledge.
 
-I tried to follow the bases of a **Clean Architecture** and the **SOLID** principles. The intention is to have a testable, robust and scalable code and avoid the following bad smells:
+I tried to follow the bases of a **Clean Architecture** and the **SOLID** principles. The intention is to have a testable, robust and scalable code and avoid bad smells like:
 - God entities.
 - Repeated code.
 - Non testable code.
