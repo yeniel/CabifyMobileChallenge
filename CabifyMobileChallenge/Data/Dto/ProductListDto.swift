@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct ProductListDto: Codable {
+struct ProductListDto: Codable, Equatable {
     let products: [ProductDto]
 }
