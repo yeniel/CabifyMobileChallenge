@@ -19,7 +19,7 @@
 		FE24146529BA48B900CE63F4 /* ProductsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146429BA48B900CE63F4 /* ProductsDataSource.swift */; };
 		FE24146729BA49C600CE63F4 /* DtoMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146629BA49C600CE63F4 /* DtoMapper.swift */; };
 		FE24146929BA4A3100CE63F4 /* ProductListDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146829BA4A3100CE63F4 /* ProductListDto.swift */; };
-		FE24146F29BA4F6700CE63F4 /* LoadProductsUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146E29BA4F6700CE63F4 /* LoadProductsUseCaseImpl.swift */; };
+		FE24146F29BA4F6700CE63F4 /* LoadProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146E29BA4F6700CE63F4 /* LoadProductsUseCase.swift */; };
 		FE24147129BA533E00CE63F4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147029BA533E00CE63F4 /* AppCoordinator.swift */; };
 		FE24147329BA535B00CE63F4 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147229BA535B00CE63F4 /* MainCoordinator.swift */; };
 		FE24147729BA543E00CE63F4 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24147629BA543E00CE63F4 /* ProductListView.swift */; };
@@ -44,10 +44,10 @@
 		FEBFF2CD29BC9FC60056E397 /* ProductsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146429BA48B900CE63F4 /* ProductsDataSource.swift */; };
 		FEBFF2CE29BC9FCE0056E397 /* ProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24145A29BA44E000CE63F4 /* ProductsRepository.swift */; };
 		FEBFF2CF29BC9FCE0056E397 /* GetDiscountsOfOrderItemUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178929BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift */; };
-		FEBFF2D029BC9FCE0056E397 /* LoadOrderUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178129BBF2BC003D8E17 /* LoadOrderUseCaseImpl.swift */; };
-		FEBFF2D129BC9FCE0056E397 /* SaveOrderUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177429BBE416003D8E17 /* SaveOrderUseCaseImpl.swift */; };
+		FEBFF2D029BC9FCE0056E397 /* LoadOrderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178129BBF2BC003D8E17 /* LoadOrderUseCase.swift */; };
+		FEBFF2D129BC9FCE0056E397 /* SaveOrderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177429BBE416003D8E17 /* SaveOrderUseCase.swift */; };
 		FEBFF2D229BC9FCE0056E397 /* OrderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177729BBE77A003D8E17 /* OrderRepository.swift */; };
-		FEBFF2D329BC9FCE0056E397 /* LoadProductsUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146E29BA4F6700CE63F4 /* LoadProductsUseCaseImpl.swift */; };
+		FEBFF2D329BC9FCE0056E397 /* LoadProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24146E29BA4F6700CE63F4 /* LoadProductsUseCase.swift */; };
 		FEBFF2D429BC9FE50056E397 /* OrderItemDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178729BC03F9003D8E17 /* OrderItemDiscount.swift */; };
 		FEBFF2D529BC9FE50056E397 /* DiscountStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED58F1E29BB7E0A00016CF9 /* DiscountStrategy.swift */; };
 		FEBFF2D629BC9FE50056E397 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE24148529BA963800CE63F4 /* Order.swift */; };
@@ -95,13 +95,13 @@
 		FED86DB429BD0233004637E6 /* LoadOrderUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED86DB329BD0233004637E6 /* LoadOrderUseCaseSpec.swift */; };
 		FED86DB629BD051D004637E6 /* ProductListViewSnapshotSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED86DB529BD051D004637E6 /* ProductListViewSnapshotSpec.swift */; };
 		FED86DB829BD0CB6004637E6 /* CheckoutViewSnapshotSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED86DB729BD0CB6004637E6 /* CheckoutViewSnapshotSpec.swift */; };
-		FEE0177529BBE416003D8E17 /* SaveOrderUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177429BBE416003D8E17 /* SaveOrderUseCaseImpl.swift */; };
+		FEE0177529BBE416003D8E17 /* SaveOrderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177429BBE416003D8E17 /* SaveOrderUseCase.swift */; };
 		FEE0177829BBE77A003D8E17 /* OrderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177729BBE77A003D8E17 /* OrderRepository.swift */; };
 		FEE0177A29BBE7E4003D8E17 /* OrderRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177929BBE7E4003D8E17 /* OrderRepositoryImpl.swift */; };
 		FEE0177C29BBE832003D8E17 /* OrderDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177B29BBE832003D8E17 /* OrderDataSource.swift */; };
 		FEE0177E29BBE88C003D8E17 /* OrderLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177D29BBE88C003D8E17 /* OrderLocalDataSource.swift */; };
 		FEE0178029BBEA00003D8E17 /* LocalMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0177F29BBEA00003D8E17 /* LocalMapper.swift */; };
-		FEE0178229BBF2BC003D8E17 /* LoadOrderUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178129BBF2BC003D8E17 /* LoadOrderUseCaseImpl.swift */; };
+		FEE0178229BBF2BC003D8E17 /* LoadOrderUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178129BBF2BC003D8E17 /* LoadOrderUseCase.swift */; };
 		FEE0178429BBF3E1003D8E17 /* OrderItemUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178329BBF3E1003D8E17 /* OrderItemUIModel.swift */; };
 		FEE0178829BC03F9003D8E17 /* OrderItemDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178729BC03F9003D8E17 /* OrderItemDiscount.swift */; };
 		FEE0178A29BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0178929BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift */; };
@@ -147,7 +147,7 @@
 		FE24146429BA48B900CE63F4 /* ProductsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDataSource.swift; sourceTree = "<group>"; };
 		FE24146629BA49C600CE63F4 /* DtoMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DtoMapper.swift; sourceTree = "<group>"; };
 		FE24146829BA4A3100CE63F4 /* ProductListDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListDto.swift; sourceTree = "<group>"; };
-		FE24146E29BA4F6700CE63F4 /* LoadProductsUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductsUseCaseImpl.swift; sourceTree = "<group>"; };
+		FE24146E29BA4F6700CE63F4 /* LoadProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadProductsUseCase.swift; sourceTree = "<group>"; };
 		FE24147029BA533E00CE63F4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FE24147229BA535B00CE63F4 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		FE24147629BA543E00CE63F4 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
@@ -178,13 +178,13 @@
 		FED86DB529BD051D004637E6 /* ProductListViewSnapshotSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewSnapshotSpec.swift; sourceTree = "<group>"; };
 		FED86DB729BD0CB6004637E6 /* CheckoutViewSnapshotSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewSnapshotSpec.swift; sourceTree = "<group>"; };
 		FED86DB929BD2F78004637E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		FEE0177429BBE416003D8E17 /* SaveOrderUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveOrderUseCaseImpl.swift; sourceTree = "<group>"; };
+		FEE0177429BBE416003D8E17 /* SaveOrderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveOrderUseCase.swift; sourceTree = "<group>"; };
 		FEE0177729BBE77A003D8E17 /* OrderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepository.swift; sourceTree = "<group>"; };
 		FEE0177929BBE7E4003D8E17 /* OrderRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRepositoryImpl.swift; sourceTree = "<group>"; };
 		FEE0177B29BBE832003D8E17 /* OrderDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDataSource.swift; sourceTree = "<group>"; };
 		FEE0177D29BBE88C003D8E17 /* OrderLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderLocalDataSource.swift; sourceTree = "<group>"; };
 		FEE0177F29BBEA00003D8E17 /* LocalMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMapper.swift; sourceTree = "<group>"; };
-		FEE0178129BBF2BC003D8E17 /* LoadOrderUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadOrderUseCaseImpl.swift; sourceTree = "<group>"; };
+		FEE0178129BBF2BC003D8E17 /* LoadOrderUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadOrderUseCase.swift; sourceTree = "<group>"; };
 		FEE0178329BBF3E1003D8E17 /* OrderItemUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemUIModel.swift; sourceTree = "<group>"; };
 		FEE0178729BC03F9003D8E17 /* OrderItemDiscount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItemDiscount.swift; sourceTree = "<group>"; };
 		FEE0178929BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDiscountsOfOrderItemUseCase.swift; sourceTree = "<group>"; };
@@ -399,13 +399,13 @@
 			isa = PBXGroup;
 			children = (
 				FED86DB929BD2F78004637E6 /* Info.plist */,
+				FEF3731F29B7EF5200291A19 /* CabifyMobileChallengeApp.swift */,
+				FE24146029BA484A00CE63F4 /* Factory.swift */,
+				FEF3732329B7EF5500291A19 /* Assets.xcassets */,
 				FEF3734929B7F1B900291A19 /* Data */,
 				FEF3734A29B7F1BF00291A19 /* Domain */,
 				FEF3734B29B7F1CA00291A19 /* Presentation */,
-				FEF3731F29B7EF5200291A19 /* CabifyMobileChallengeApp.swift */,
-				FEF3732329B7EF5500291A19 /* Assets.xcassets */,
 				FEF3732529B7EF5500291A19 /* Preview Content */,
-				FE24146029BA484A00CE63F4 /* Factory.swift */,
 			);
 			path = CabifyMobileChallenge;
 			sourceTree = "<group>";
@@ -491,9 +491,9 @@
 			isa = PBXGroup;
 			children = (
 				FEE0178929BC0466003D8E17 /* GetDiscountsOfOrderItemUseCase.swift */,
-				FEE0178129BBF2BC003D8E17 /* LoadOrderUseCaseImpl.swift */,
-				FE24146E29BA4F6700CE63F4 /* LoadProductsUseCaseImpl.swift */,
-				FEE0177429BBE416003D8E17 /* SaveOrderUseCaseImpl.swift */,
+				FEE0178129BBF2BC003D8E17 /* LoadOrderUseCase.swift */,
+				FE24146E29BA4F6700CE63F4 /* LoadProductsUseCase.swift */,
+				FEE0177429BBE416003D8E17 /* SaveOrderUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -746,7 +746,7 @@
 				FED58F2129BB888500016CF9 /* DiscountUIModel.swift in Sources */,
 				FE24146729BA49C600CE63F4 /* DtoMapper.swift in Sources */,
 				FE24147B29BA557C00CE63F4 /* ScreenStatus.swift in Sources */,
-				FE24146F29BA4F6700CE63F4 /* LoadProductsUseCaseImpl.swift in Sources */,
+				FE24146F29BA4F6700CE63F4 /* LoadProductsUseCase.swift in Sources */,
 				FE24148129BA5B8500CE63F4 /* CheckoutViewModel.swift in Sources */,
 				FE24146129BA484A00CE63F4 /* Factory.swift in Sources */,
 				FE24145D29BA453500CE63F4 /* Product.swift in Sources */,
@@ -756,7 +756,7 @@
 				FEE0178829BC03F9003D8E17 /* OrderItemDiscount.swift in Sources */,
 				FED58F1F29BB7E0A00016CF9 /* DiscountStrategy.swift in Sources */,
 				FEE0177E29BBE88C003D8E17 /* OrderLocalDataSource.swift in Sources */,
-				FEE0178229BBF2BC003D8E17 /* LoadOrderUseCaseImpl.swift in Sources */,
+				FEE0178229BBF2BC003D8E17 /* LoadOrderUseCase.swift in Sources */,
 				FE24147929BA54FC00CE63F4 /* ProductListViewModel.swift in Sources */,
 				FE24148429BA940100CE63F4 /* CurrencyUtils.swift in Sources */,
 				FE24147129BA533E00CE63F4 /* AppCoordinator.swift in Sources */,
@@ -769,7 +769,7 @@
 				FEF3736A29B7FA0400291A19 /* ApiClient.swift in Sources */,
 				FEE0178029BBEA00003D8E17 /* LocalMapper.swift in Sources */,
 				FE24145F29BA45EF00CE63F4 /* ProductType.swift in Sources */,
-				FEE0177529BBE416003D8E17 /* SaveOrderUseCaseImpl.swift in Sources */,
+				FEE0177529BBE416003D8E17 /* SaveOrderUseCase.swift in Sources */,
 				FE24148629BA963800CE63F4 /* Order.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -798,10 +798,10 @@
 				FEBFF2C229BC9E4F0056E397 /* Mocks.swift in Sources */,
 				FEBFF2F129BCA7300056E397 /* OrderRepositorySpec.swift in Sources */,
 				FED86D9429BCC1DB004637E6 /* DiscountUIModel.swift in Sources */,
-				FEBFF2D029BC9FCE0056E397 /* LoadOrderUseCaseImpl.swift in Sources */,
+				FEBFF2D029BC9FCE0056E397 /* LoadOrderUseCase.swift in Sources */,
 				FED86DB829BD0CB6004637E6 /* CheckoutViewSnapshotSpec.swift in Sources */,
 				FED86DA929BCDF9B004637E6 /* GetDiscountsOfOrderItemUseCaseSpec.swift in Sources */,
-				FEBFF2D129BC9FCE0056E397 /* SaveOrderUseCaseImpl.swift in Sources */,
+				FEBFF2D129BC9FCE0056E397 /* SaveOrderUseCase.swift in Sources */,
 				FED86D9529BCC1DB004637E6 /* ProductListView.swift in Sources */,
 				FEBFF2DD29BCA18A0056E397 /* ProductListDto.swift in Sources */,
 				FED86DA529BCCEE7004637E6 /* PackDiscountSpec.swift in Sources */,
@@ -828,7 +828,7 @@
 				FEBFF2C829BC9FC60056E397 /* ProductsApiDataSource.swift in Sources */,
 				FEBFF2D229BC9FCE0056E397 /* OrderRepository.swift in Sources */,
 				FEBFF2DE29BCA18A0056E397 /* DtoMapper.swift in Sources */,
-				FEBFF2D329BC9FCE0056E397 /* LoadProductsUseCaseImpl.swift in Sources */,
+				FEBFF2D329BC9FCE0056E397 /* LoadProductsUseCase.swift in Sources */,
 				FEBFF2C929BC9FC60056E397 /* OrderDataSource.swift in Sources */,
 				FED86DAE29BCEAD2004637E6 /* CurrencyUtilsSpec.swift in Sources */,
 				FEBFF2C529BC9F5E0056E397 /* ObjectMother.swift in Sources */,

@@ -7,20 +7,8 @@
 
 import Foundation
 
-struct ProductDto: Codable, Equatable {
+struct ProductDto: Codable {
     let code: String
     let name: String
     let price: Double
-
-    enum CodingKeys: String, CodingKey {
-        case code
-        case name
-        case price
-    }
-
-    static func == (lhs: ProductDto, rhs: ProductDto) -> Bool {
-        lhs.code == rhs.code
-            && lhs.name == rhs.name
-            && lhs.price == rhs.price
-    }
 }

@@ -9,6 +9,12 @@ import Foundation
 import Factory
 
 extension Container {
+    // MARK: ApiClient
+
+    var urlSessionApiClient: Factory<ApiClient> {
+        Factory(self) { UrlSessionApiClient() }
+    }
+
     // MARK: Repositories
 
     var productsRepository: Factory<ProductsRepository> {
@@ -25,12 +31,6 @@ extension Container {
 
     var orderLocalDataSource: Factory<OrderDataSource> {
         Factory(self) { OrderLocalDataSource() }
-    }
-
-    // MARK: Services
-
-    var urlSessionApiClient: Factory<ApiClient> {
-        Factory(self) { UrlSessionApiClient() }
     }
 
     // MARK: Mappers

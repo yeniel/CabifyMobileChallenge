@@ -7,10 +7,6 @@
 
 import Foundation
 
-struct ProductListDto: Codable, Equatable {
+struct ProductListDto: Codable {
     let products: [ProductDto]
-
-    static func == (lhs: ProductListDto, rhs: ProductListDto) -> Bool {
-        lhs.products == rhs.products
-    }
 }
