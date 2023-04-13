@@ -18,7 +18,7 @@ class ProductsRepositorySpec: QuickSpec {
 
         beforeEach {
             Container.shared.manager.push()
-            self.setupMocks()
+            setupMocks()
         }
 
         afterEach {
@@ -40,11 +40,11 @@ class ProductsRepositorySpec: QuickSpec {
                 }
             }
         }
-    }
 
-    func setupMocks() {
-        Container.shared.urlSessionApiClient.register {
-            MockApiClient<ProductListDto>(data: ObjectMother.productListDto)
+        func setupMocks() {
+            Container.shared.urlSessionApiClient.register {
+                MockApiClient<ProductListDto>(data: ObjectMother.productListDto)
+            }
         }
     }
 }

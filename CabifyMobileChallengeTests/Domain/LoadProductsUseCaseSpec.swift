@@ -18,19 +18,19 @@ class LoadProductsUseCaseSpec: QuickSpec {
 
         beforeEach {
             Container.shared.manager.push()
-            self.setupMocks()
+            setupMocks()
         }
 
         afterEach {
             Container.shared.manager.pop()
         }
 
-        describe("GIVEN an unsorted products repository") {
+        describe("GIVEN an unsorted products from repository") {
             context("WHEN execute load product use case") {
                 it("THEN publishs a sorted by name product list") {
-                    let repository = LoadProductsUseCaseImpl()
+                    let useCase = LoadProductsUseCaseImpl()
 
-                    repository.execute().sink(
+                    useCase.execute().sink(
                         receiveCompletion: { _ in },
                         receiveValue: { products = $0 }
                     )
@@ -40,9 +40,9 @@ class LoadProductsUseCaseSpec: QuickSpec {
                 }
             }
         }
-    }
 
-    func setupMocks() {
-        Container.shared.productsRepository.register { MockProductsRepository() }
+        func setupMocks() {
+            Container.shared.productsRepository.register { MockProductsRepository() }
+        }
     }
 }

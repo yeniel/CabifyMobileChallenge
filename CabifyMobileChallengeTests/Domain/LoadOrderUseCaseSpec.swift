@@ -18,7 +18,7 @@ class LoadOrderUseCaseSpec: QuickSpec {
 
         beforeEach {
             Container.shared.manager.push()
-            self.setupMocks()
+            setupMocks()
         }
 
         afterEach {
@@ -28,9 +28,9 @@ class LoadOrderUseCaseSpec: QuickSpec {
         describe("GIVEN an order repository") {
             context("WHEN execute load order use case") {
                 it("THEN publishs a order with sorted by name order item list") {
-                    let repository = LoadOrderUseCaseImpl()
+                    let useCase = LoadOrderUseCaseImpl()
 
-                    repository.execute().sink(
+                    useCase.execute().sink(
                         receiveCompletion: { _ in },
                         receiveValue: { order = $0 }
                     )
@@ -40,9 +40,9 @@ class LoadOrderUseCaseSpec: QuickSpec {
                 }
             }
         }
-    }
-
-    func setupMocks() {
-        Container.shared.orderRepository.register { MockOrderRepository() }
+        
+        func setupMocks() {
+            Container.shared.orderRepository.register { MockOrderRepository() }
+        }
     }
 }
